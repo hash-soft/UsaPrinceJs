@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"出口","trigger":8,"inout":"out","pages":[{"scriptId":1}]},
+{"id":2,"name":"2-1","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"2-2","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":4,"name":"2-3","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":5,"name":"2-4","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":6,"name":"2-5","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":7,"name":"宝１","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":8,"name":"宝２","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":4}]},
+{"id":9,"name":"人","trigger":1,"imageId":15,"index":0,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":5}]}
+]
+}

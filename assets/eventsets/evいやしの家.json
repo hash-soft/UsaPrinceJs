@@ -1,0 +1,10 @@
+{
+"objects":[
+null,
+{"id":1,"name":"世界へ","trigger":8,"inout":"out","pages":[{"scriptId":1}]},
+{"id":2,"name":"2Fへ","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"住人","trigger":1,"imageId":10,"index":7,"direction":3,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":3},{"scriptId":6}]},
+{"id":4,"name":"扉１","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":4,"partId":5}]},
+{"id":5,"name":"扉２","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":5,"partId":5}]}
+]
+}

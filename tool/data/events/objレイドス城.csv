@@ -1,0 +1,7 @@
+comment,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,,
+1,世界,0x08,,,,,,,,in,,,,[,1,,,,]
+2,宝７３,0x02,,,,,,,,in,,,1,[,,88,54,2,]
+3,宝７４,0x02,,,,,,,,in,,,1,[,,88,54,3,]
+4,クリスタルキング,0x01,57,0,0,1,,0,0,,,,,[,5,,,4,]

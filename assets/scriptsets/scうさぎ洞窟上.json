@@ -1,0 +1,225 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "表",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          111,
+          19,
+          25,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "裏",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          112,
+          30,
+          25,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "穴",
+    "conditions": [],
+    "list": [
+      {
+        "code": 162,
+        "parameters": [
+          11,
+          1,
+          0,
+          2,
+          1024,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          0,
+          0,
+          60
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          113,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          123,
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "穴隠1",
+    "conditions": [],
+    "list": [
+      {
+        "code": 162,
+        "parameters": [
+          11,
+          0,
+          0,
+          2,
+          1024,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          5,
+          0,
+          6
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "穴隠2",
+    "conditions": [],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          5,
+          5,
+          0,
+          0,
+          1024,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 15,
+        "parameters": [
+          11,
+          2,
+          5,
+          1
+        ]
+      },
+      {
+        "code": 15,
+        "parameters": [
+          12,
+          2,
+          5,
+          2
+        ]
+      },
+      {
+        "code": 99,
+        "parameters": [
+          0,
+          55,
+          11,
+          12,
+          1
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          113,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          123,
+          0
+        ]
+      }
+    ]
+  }
+]

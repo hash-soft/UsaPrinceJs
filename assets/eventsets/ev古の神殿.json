@@ -1,0 +1,12 @@
+{
+"objects":[
+null,
+{"id":1,"name":"世界へ","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"扉１","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":2,"partId":2}]},
+{"id":3,"name":"扉２","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":3,"partId":2}]},
+{"id":4,"name":"宝３１","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":4},{"scriptId":4}]},
+{"id":5,"name":"宝３２","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":4},{"scriptId":5}]},
+{"id":6,"name":"神官","trigger":1,"imageId":52,"index":0,"direction":0,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":6}]},
+{"id":7,"name":"兵士","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":7}]}
+]
+}

@@ -1,0 +1,90 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "宿屋1Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          72,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          21,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "民家1Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "冒険者",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「偉大な魔法使いは\n塔に　住んでいると　聞いたぞ。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "婦人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「この村の南に　いやしのつえを\n作れる　おじいさんの家が\nありますわよ。",
+          0
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "宿屋2Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          72,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          22,
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "民家2Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "フィールドへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          188,
+          254,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "宿屋",
+    "conditions": [],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          12,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "武器防具",
+    "conditions": [],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 21,
+        "parameters": [
+          24,
+          25,
+          53,
+          54,
+          81,
+          82,
+          71,
+          72
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          17,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "道具",
+    "conditions": [],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 21,
+        "parameters": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          58,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "診療所",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          76,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "案内",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ようこそ　アルビエ村へ！",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "欠番",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 10,
+    "name": "ねこ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          24,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「みゃおーん。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "農夫",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「あれっ！？　ひょっとして\nラプリエールの　姫さまですか？",
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          13,
+          0
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「からかおうたって　だめですよ。\nこんな　はなれた村に　姫さまが\nくるなんて　ないですよ。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 52,
+        "parameters": []
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「そうですよね。\nこんな　はなれた村に　姫さまが\nくるなんて　ないですよ。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "主人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「いやしのつえを　つかえば\nたいりょくを　回復できるぞ。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「北の洞窟に　行くなら\n持っていたほうが　いいだろう。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「誰でも　使えるってわけじゃ\nないが　お嬢さん方なら\n大丈夫だろう。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "ポートムード情報",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「北の洞窟を抜けて　西に行けば\n港町　ポートムードですわ。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "かえるの口",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「カエルのくちを　使えば\n最後にたちよった　城や町へ\nもどることが　できるのよ。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「１つ　もっていれば　安心よ。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "ev15",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 16,
+    "name": "ev16",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 17,
+    "name": "ev17",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 18,
+    "name": "ev18",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 19,
+    "name": "ev19",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 20,
+    "name": "ev20",
+    "conditions": [],
+    "list": []
+  }
+]

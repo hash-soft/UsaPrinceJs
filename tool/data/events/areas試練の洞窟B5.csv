@@ -1,0 +1,5 @@
+comment,名前,エンカウントId,地形タイプ
+id,,encounterId,terrainType
+null,,,
+1,左,91,0
+2,右,91,0

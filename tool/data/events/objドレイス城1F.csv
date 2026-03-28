@@ -1,0 +1,12 @@
+comment,,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,1.trigger,*pages*
+null,,,,,,,,,,,,,,,,,,,,
+1,城下町へ,0x08,,,,,,,,in,,,,[,1,,,,,]
+2,2F,0x08,,,,,,,,in,,,,[,2,,,,,]
+3,B1,0x08,,,,,,,,in,,,,[,3,,,,,]
+4,兵士１,0x01,47,0,0,1,,0,0,,,,,[,4,,,,,]
+5,兵士２,0x01,47,0,0,1,r1,1,0,,,,,[,5,,,,,]
+6,兵士３,0x01,47,0,0,1,r2,1,0,,,,,[,6,,,,,]
+7,食堂１,0x01,51,0,0,1,r3,1,0,,,,,[,7,,,,,]
+8,食堂２,0x01,39,0,1,1,r3,0,0,,,,,[,8,,,,,]
+9,食堂３,0x01,51,0,3,1,r3,1,0,,,,,[,9,,,,,]

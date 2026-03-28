@@ -1,0 +1,13 @@
+{
+"objects":[
+null,
+{"id":1,"name":"B4","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"B6","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"宝２４","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":4,"name":"宝２５","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":4}]},
+{"id":5,"name":"宝２６","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":5}]},
+{"id":6,"name":"宝２７","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":6}]},
+{"id":7,"name":"宝２８","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":7}]},
+{"id":8,"name":"宝２９","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":8}]}
+]
+}

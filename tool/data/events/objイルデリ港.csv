@@ -1,0 +1,8 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,世界へ,0x08,,,,,,,,out,,,,[,1,,,]
+2,船員,0x01,9,4,3,1,,0,0,,,,,[,2,,,]
+3,船,0x08,18,0,2,0,,0,0,,,,,[,3,,,]
+4,住人,0x01,9,4,3,1,,0,0,,,,,[,4,,,]
+5,おばあさん,0x01,9,7,2,1,,0,0,,,,,[,5,,,]

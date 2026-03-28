@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"城下町へ","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"2F","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"B1","trigger":8,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"兵士１","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":4}]},
+{"id":5,"name":"兵士２","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":5}]},
+{"id":6,"name":"兵士３","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r2","moveType":1,"moveRouteId":0,"pages":[{"scriptId":6}]},
+{"id":7,"name":"食堂１","trigger":1,"imageId":51,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r3","moveType":1,"moveRouteId":0,"pages":[{"scriptId":7}]},
+{"id":8,"name":"食堂２","trigger":1,"imageId":39,"index":0,"direction":1,"lockType":1,"moveRegionKey":"r3","moveType":0,"moveRouteId":0,"pages":[{"scriptId":8}]},
+{"id":9,"name":"食堂３","trigger":1,"imageId":51,"index":0,"direction":3,"lockType":1,"moveRegionKey":"r3","moveType":1,"moveRouteId":0,"pages":[{"scriptId":9}]}
+]
+}

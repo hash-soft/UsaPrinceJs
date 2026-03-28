@@ -1,0 +1,4 @@
+comment,,,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,priority,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,1.imageId,1.lockType,*pages*
+null,,,,,,,,,,,,,,,,,,,,,
+1,1F,0x08,,,,,,,,in,,,,[,1,,,,,,]

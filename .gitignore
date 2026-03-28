@@ -1,0 +1,24 @@
+# 自動生成物とassetsのテキストデータ以外を除外
+node_modules/
+assets/**/*
+!assets/**/
+!assets/**/*.json
+!assets/**/*.tiled-project
+!assets/**/*.tiled-session
+main/
+js/
+js_config/
+screenshots
+build_develop*
+build_release*
+index.html
+index_test.html
+index_config.html
+config.json
+licenses/*
+!extractLicenses.js
+tool/audio/assets/music
+tool/audio/assets/sound
+tool/input/node_modules/
+tool/input/package-lock.json
+unused

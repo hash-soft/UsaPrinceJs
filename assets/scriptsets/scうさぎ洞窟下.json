@@ -1,0 +1,82 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "表",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          111,
+          46,
+          102,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "裏1",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          112,
+          21,
+          102,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "裏2",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          112,
+          41,
+          102,
+          0,
+          0
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,宿泊客1,0x01,15,0,0,1,,0,0,,,,,[,1,,,]
+2,民家の人,0x01,10,4,0,1,r2,1,0,,,,,[,2,,,]
+3,大きな家人,0x01,6,0,0,2,r1,1,0,,,,,[,3,,,]
+4,宿屋1Fへ,0x08,,,,,,,,in,,,,[,4,,,]
+5,民家1Fへ,0x08,,,,,,,,in,,,,[,4,,,]
+6,大きな家1Fへ,0x08,,,,,,,,in,,,,[,4,,,]
+7,宿泊客2,0x01,10,7,2,1,,0,0,,,,,[,5,,,]
+8,扉１,0x104,,,,,,,,in,,1,,[,6,,5,]
+9,扉２,0x104,,,,,,,,in,,1,,[,7,,5,]

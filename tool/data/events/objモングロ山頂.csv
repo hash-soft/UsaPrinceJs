@@ -1,0 +1,8 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,洞窟入口,0x08,,,,,,,,in,,,,[,1,,,]
+2,隊列分離,0,,,,,,,,in,,,,[,2,,,]
+3,ミミー,0x01,3,0,1,1,,0,0,in,,,,[,3,,,]
+4,王子,0x01,2,0,1,1,,0,0,in,,,,[,4,,,]
+5,ジャンプイベント,0,,,,,,,,in,,,,[,5,,,]

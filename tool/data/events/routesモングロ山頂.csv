@@ -1,0 +1,6 @@
+comment,,繰り返すか,移動できない場合とばすか,移動頻度,動作リスト,45:すりぬけON,,,,20:ジャンプ,,,,,,,,,,
+id,,repeat,skippable,moveFrequency,*list*,0.code,0.parameters,1.code,1.parameters,2.code,2.parameters,3.code,3.parameters,4.code,4.parameters,5.code,5.parameters,6.code,6.parameters,*list*
+null,,,,,,,,,,,,,,,,,,,,
+1,姫,false,false,1,[,51,*[3]*,,,,,,,,,,,,,]
+2,ミミー,false,false,1,[,51,*[2]*,1,*[11]*,2,*[14]*,1,*[1]*,2,*[2]*,,,,,]
+3,王子,false,false,1,[,1,*[11]*,2,*[15]*,24,,,,,,,,,,]

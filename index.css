@@ -1,0 +1,156 @@
+canvas {
+  image-rendering: -moz-crisp-edges; /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast; /* Safari                        */
+  image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
+  image-rendering: pixelated; /* Awesome future-browsers       */
+  -ms-interpolation-mode: nearest-neighbor; /* IE                            */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: lightgrey;
+}
+
+div#slotInput {
+  left: 120px;
+  top: 5px;
+  width: 320px;
+  height: 170px;
+  background: rgba(255, 137, 167, 0.7);
+  position: relative;
+  display: none;
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  flex: 1;
+  order: -1;
+  background-color: #d9d9d9;
+  border-radius: 3px 3px 0 0;
+  margin-right: 3px;
+  text-align: center;
+  color: #565656;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.tabs::after {
+  content: '';
+  width: 100%;
+  height: 2%;
+  order: -1;
+  display: block;
+  background: rgba(0, 137, 167, 0.7);
+}
+
+/*ラジオボタンを全て消す*/
+input[name='tab_item'] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  opacity: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+.tabs input:checked + .tab_item + .tab_content {
+  height: 65%;
+  transition: 0.5s opacity;
+  padding: 5% 5% 0;
+  opacity: 1;
+}
+
+/* テキストエリア */
+div.tabs .text {
+  width: 90%;
+  resize: none;
+}
+
+/* ボタン配置領域 */
+div.buttonGroup {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1% 5%;
+}
+
+/* ボタンの角を丸くする */
+div.buttonGroup .decide {
+  border-radius: 8px;
+}
+
+/* ボタンにカーソルが乗った時 */
+div.buttonGroup .decide:hover {
+  opacity: 0.7;
+}
+
+.error-bg-cover {
+  position: absolute;
+  background: rgba(255, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.error-title-text {
+  position: absolute;
+  background: rgba(0, 255, 0, 1);
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -25%);
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.error-message-text {
+  position: absolute;
+  background: rgba(0, 0, 255, 1);
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  font-size: 20px;
+  color: #ff0;
+}
+
+.error-button {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -80%);
+  text-align: center;
+  font-size: 20px;
+}

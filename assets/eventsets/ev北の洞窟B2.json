@@ -1,0 +1,11 @@
+{
+"objects":[
+null,
+{"id":1,"name":"��P","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":1}]},
+{"id":2,"name":"B1-1","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"B1-2","trigger":8,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"B1-3","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"��Q","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":5}]},
+{"id":6,"name":"��R","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":6}]}
+]
+}

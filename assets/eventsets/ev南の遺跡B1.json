@@ -1,0 +1,11 @@
+{
+"objects":[
+null,
+{"id":1,"name":"入り口","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"B2","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"宝１７","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":4,"name":"宝１８","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":4}]},
+{"id":5,"name":"扉","trigger":260,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":5,"partId":51}]},
+{"id":6,"name":"門番","trigger":1,"imageId":40,"index":0,"direction":0,"lockType":0,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":6}]}
+]
+}

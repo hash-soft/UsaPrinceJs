@@ -1,0 +1,15 @@
+{
+"objects":[
+null,
+{"id":1,"name":"世界へ","trigger":8,"inout":"out","pages":[{"scriptId":1}]},
+{"id":2,"name":"占い師","trigger":1,"imageId":34,"index":0,"direction":0,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"村人１","trigger":1,"imageId":32,"index":0,"direction":1,"lockType":1,"moveRegionKey":"r2","moveType":1,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"宿屋","trigger":1,"imageId":35,"index":0,"direction":2,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":4}]},
+{"id":5,"name":"村人２","trigger":1,"imageId":33,"index":0,"direction":3,"lockType":1,"moveRegionKey":"r2","moveType":1,"moveRouteId":0,"pages":[{"scriptId":5}]},
+{"id":6,"name":"道具","trigger":1,"imageId":36,"index":0,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":6}]},
+{"id":7,"name":"村人３","trigger":1,"imageId":31,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r3","moveType":1,"moveRouteId":0,"pages":[{"scriptId":7}]},
+{"id":8,"name":"案内","trigger":1,"imageId":30,"index":0,"direction":3,"lockType":1,"moveRegionKey":"r2","moveType":1,"moveRouteId":0,"pages":[{"scriptId":8}]},
+{"id":9,"name":"セーブ","trigger":2,"inout":"in","pages":[{"commonScriptId":15}]},
+{"id":10,"name":"ねこ","trigger":1,"imageId":16,"index":2,"direction":0,"lockType":1,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":9}]}
+]
+}

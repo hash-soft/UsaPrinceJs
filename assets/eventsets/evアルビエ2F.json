@@ -1,0 +1,13 @@
+{
+"objects":[
+null,
+{"id":1,"name":"宿屋1Fへ","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"民家1Fへ","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"冒険者","trigger":1,"imageId":9,"index":2,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"婦人","trigger":1,"imageId":9,"index":5,"direction":3,"lockType":1,"moveType":4,"moveRouteId":1,"pages":[{"scriptId":4}]}
+],
+"moveRoutes":[
+null,
+{"id":1,"repeat":true,"skippable":false,"moveFrequency":5,"list":[{"code":1,"parameters":[1]},{"code":3,"parameters":[2]},{"code":1,"parameters":[1]},{"code":22},{"code":15,"parameters":[120]}]}
+]
+}

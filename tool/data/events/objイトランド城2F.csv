@@ -1,0 +1,7 @@
+comment,,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,1.trigger,*pages*
+null,,,,,,,,,,,,,,,,,,,,
+1,1F,0x08,,,,,,,,in,,,,[,1,,,,,]
+2,王,0x01,48,0,0,2,,0,0,,,,,[,2,,,,,]
+3,王妃,0x01,49,0,0,2,,0,0,,,,,[,3,,,,,]
+4,兵士,0x01,47,0,0,1,,1,0,,,,,[,4,,,,,]

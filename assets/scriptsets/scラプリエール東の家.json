@@ -1,0 +1,181 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "世界へ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          244,
+          243,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "住人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「東にいけば　ブラス城だ。\nもっとも　山にはばまれて\nかんたんには　行けないがな。",
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "ねこ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          24,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「にゃあにゃあ。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "扉",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 1,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "ev5",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 6,
+    "name": "ev6",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 7,
+    "name": "ev7",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 8,
+    "name": "ev8",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 9,
+    "name": "ev9",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 10,
+    "name": "ev10",
+    "conditions": [],
+    "list": []
+  }
+]

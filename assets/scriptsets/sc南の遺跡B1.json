@@ -1,0 +1,342 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "入り口",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          34,
+          281,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "B2",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          65,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "宝１７",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 47,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          47,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          38,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          13,
+          5,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "宝１８",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 48,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          48,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "扉",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 1,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          152,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "門番",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 15,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 146,
+        "parameters": [
+          0,
+          1,
+          27,
+          2
+        ]
+      },
+      {
+        "code": 132,
+        "parameters": [
+          0,
+          192,
+          0,
+          1,
+          0,
+          122,
+          0,
+          0,
+          0,
+          5
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "クロスブーメラン",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          67,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          13,
+          5,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 13,
+        "parameters": [
+          72,
+          72,
+          0,
+          0,
+          157,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          87,
+          0
+        ]
+      }
+    ]
+  }
+]

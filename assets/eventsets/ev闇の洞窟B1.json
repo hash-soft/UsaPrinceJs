@@ -1,0 +1,11 @@
+{
+"objects":[
+null,
+{"id":1,"name":"入り口","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"B2","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"宝５８","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":4,"name":"宝５９","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":4}]},
+{"id":5,"name":"宝６０","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":5}]},
+{"id":6,"name":"宝６１","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":6}]}
+]
+}

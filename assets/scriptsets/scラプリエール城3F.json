@@ -1,0 +1,382 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "2Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          12,
+          4,
+          6,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "お手伝い",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "＊「姫さま　ここで魔法を\n使っては　いけませんよ。",
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "お手伝い退場許可後",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 2,
+        "param2": 0,
+        "compare": 1
+      }
+    ],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "＊「姫さま　いよいよ旅立ちですね。\nまものなんて　得意の魔法で\nどっかんですよ。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "自室扉",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 1,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "王室扉",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 1,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          40
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "宝７９",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 109,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          109,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          43,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "宝８０",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 110,
+        "param2": 0,
+        "compare": 0
+      },
+      {
+        "type": 0,
+        "param1": 22,
+        "param2": 0,
+        "compare": 1
+      },
+      {
+        "type": 0,
+        "param1": 30,
+        "param2": 0,
+        "compare": 1
+      }
+    ],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          23,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "\\s[actor]は　たからばこを　しらべた！",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "奥のほうに　かすかに\n青い光が　見える！",
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          110,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          49,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 11,
+        "parameters": [
+          71,
+          71,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          94,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "ev8",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 9,
+    "name": "ev9",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 10,
+    "name": "わーぷ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          11,
+          23,
+          30,
+          -1,
+          0
+        ]
+      }
+    ]
+  }
+]

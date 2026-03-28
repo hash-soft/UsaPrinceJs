@@ -1,0 +1,7 @@
+comment,,繰り返すか,移動できない場合とばすか,移動頻度,動作リスト,,,,,,,,,,,,,,,
+id,,repeat,skippable,moveFrequency,*list*,0.code,0.parameters,1.code,1.parameters,2.code,2.parameters,3.code,3.parameters,4.code,4.parameters,5.code,5.parameters,6.code,6.parameters,*list*
+null,,,,,,,,,,,,,,,,,,,,
+1,ミミー外れる,false,false,1,[,45,,19,*[0;12]*,18,*[0;12]*,22,,46,,,,,,]
+2,王子仲間,false,false,1,[,45,,18,*[1;14]*,19,*[1;15]*,,,,,,,,,]
+3,ミミー仲間,false,false,1,[,45,,18,*[1;16]*,19,*[1;17]*,,,,,,,,,]
+4,一歩前へ,false,false,1,[,2,*[1]*,,,,,,,,,,,,,]

@@ -1,0 +1,10 @@
+{
+"objects":[
+null,
+{"id":1,"name":2,"trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":4,"trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"宝５３","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":4,"name":"宝５４","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":4}]},
+{"id":5,"name":"落下","trigger":8,"inout":"in","pages":[{"scriptId":5}]}
+]
+}

@@ -1,0 +1,242 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "出口",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          90,
+          111,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "2Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          82,
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "宝５１",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 81,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          81,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          498,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          92,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "宝５２",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 82,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          82,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "楽勝だろ",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 19,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 14,
+        "parameters": [
+          2,
+          1,
+          104,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「\\s[item]が　あれば\n頂上の灯ろうに　光をともすことが\nできるのですが……。",
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          12,
+          12,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 15,
+        "parameters": [
+          11,
+          4,
+          12,
+          104
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「えっ　持っている！？\nそれでは　はやく頂上へ行って\n光を　ともしてください。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「\\s[item]を　手に入れられるなら\nこの塔なんて　なんてことないでしょう！",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  }
+]

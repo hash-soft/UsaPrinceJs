@@ -1,0 +1,5 @@
+comment,名前,エンカウントId,地形タイプ
+id,,encounterId,terrainType
+null,,,
+1,低層,107,0
+2,高層,108,0

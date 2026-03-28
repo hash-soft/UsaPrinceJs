@@ -1,0 +1,17 @@
+{
+"objects":[
+null,
+{"id":1,"name":"世界へ","trigger":8,"inout":"out","pages":[{"scriptId":1}]},
+{"id":2,"name":"船員","trigger":1,"imageId":9,"index":4,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"船","trigger":8,"imageId":18,"index":0,"direction":2,"lockType":0,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"宿屋","trigger":1,"imageId":10,"index":5,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":4}]},
+{"id":5,"name":"診療所","trigger":1,"imageId":10,"index":6,"direction":3,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":5}]},
+{"id":6,"name":"道具屋","trigger":1,"imageId":26,"index":0,"direction":3,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":7}]},
+{"id":7,"name":"兵士","trigger":1,"imageId":25,"index":0,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":8}]},
+{"id":8,"name":"セーブ","trigger":2,"inout":"in","pages":[{"commonScriptId":15}]}
+],
+"moveRoutes":[
+null,
+{"id":1,"repeat":false,"skippable":true,"moveFrequency":0,"list":[{"code":45},{"code":15,"parameters":[60]},{"code":3,"parameters":[2]}]}
+]
+}

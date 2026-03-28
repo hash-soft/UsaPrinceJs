@@ -1,0 +1,9 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,南の入り口,0x08,,,,,,,,in,,,[,1,,,,]
+2,B2-1,0x08,,,,,,,,in,,,[,2,,,,]
+3,B2-2,0x08,,,,,,,,in,,,[,3,,,,]
+4,B2-3,0x08,,,,,,,,in,,,[,4,,,,]
+5,北の入り口,0x08,,,,,,,,in,,,[,5,,,,]
+6,宝１,0x02,,,,,,,,in,,1,[,,88,54,6,]

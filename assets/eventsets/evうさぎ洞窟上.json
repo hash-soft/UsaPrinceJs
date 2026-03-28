@@ -1,0 +1,10 @@
+{
+"objects":[
+null,
+{"id":1,"name":"表","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"裏","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"穴","trigger":8,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"穴隠1","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"穴隠2","trigger":8,"inout":"in","pages":[{"scriptId":5}]}
+]
+}

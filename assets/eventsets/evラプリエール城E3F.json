@@ -1,0 +1,15 @@
+{
+"objects":[
+null,
+{"id":1,"name":"2Fへの階段","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"欠番","trigger":0,"pages":[]},
+{"id":3,"name":"お手伝い","trigger":1,"imageId":10,"index":5,"direction":0,"lockType":1,"moveType":0,"pages":[{"scriptId":2}]},
+{"id":4,"name":"予約","trigger":0,"pages":[]},
+{"id":5,"name":"予約","trigger":0,"pages":[]},
+{"id":6,"name":"自室扉","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":4,"partId":1}]},
+{"id":7,"name":"王室扉","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":5,"partId":2}]},
+{"id":8,"name":"宝７９","trigger":2,"inout":"in","partOrder":1,"pages":[{"commonScriptId":88,"partId":4},{"scriptId":6}]},
+{"id":9,"name":"予約","trigger":0,"pages":[]},
+{"id":10,"name":"王子","trigger":1,"imageId":5,"index":0,"direction":0,"lockType":1,"moveType":0,"pages":[{"scriptId":10}]}
+]
+}

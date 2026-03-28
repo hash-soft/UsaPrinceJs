@@ -1,0 +1,9 @@
+{
+"objects":[
+null,
+{"id":1,"name":"1F","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"王","trigger":1,"imageId":48,"index":0,"direction":0,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"王妃","trigger":1,"imageId":49,"index":0,"direction":0,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"兵士","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":4}]}
+]
+}

@@ -1,0 +1,65 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "1F",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          96,
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "宝６６",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 96,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          96,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          93,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  }
+]

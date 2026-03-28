@@ -1,0 +1,17 @@
+{
+"objects":[
+null,
+{"id":1,"name":"世界","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"宝７３","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":2}]},
+{"id":3,"name":"宝７４","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":4,"name":"クリスタルキング","trigger":1,"imageId":57,"index":0,"direction":0,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":5},{"scriptId":4}]}
+],
+"areas":[
+null,
+{"id":1,"encounterId":105,"terrainType":0},
+{"id":2,"encounterId":104,"terrainType":0},
+{"id":3,"encounterId":104,"terrainType":0},
+{"id":4,"encounterId":104,"terrainType":0},
+{"id":5,"encounterId":104,"terrainType":0}
+]
+}

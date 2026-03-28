@@ -1,0 +1,8 @@
+{
+"objects":[
+null,
+{"id":1,"name":"B5","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"B3","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"扉４","trigger":260,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":3,"partId":51}]}
+]
+}

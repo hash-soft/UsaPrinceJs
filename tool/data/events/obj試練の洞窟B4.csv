@@ -1,0 +1,10 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,B3,0x08,,,,,,,,in,,,[,1,,,,]
+2,B5,0x08,,,,,,,,in,,,[,2,,,,]
+3,B5_落とし穴,0x08,,,,,,,,in,,,[,3,,,,]
+4,立札,0x02,,,,,,,,in,,,[,4,,,,]
+5,宝４８,0x02,,,,,,,,in,,1,[,,88,54,5,]
+6,宝４９,0x02,,,,,,,,in,,1,[,,88,54,6,]
+7,立札,0x02,,,,,,,,in,,,[,7,,,,]

@@ -1,0 +1,121 @@
+[
+    {
+        "color": "#ffff0000",
+        "name": "character",
+        "properties": [
+            {
+                "name": "objectId",
+                "type": "int",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "name": "collision",
+        "properties": [
+            {
+                "name": "collision",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "collision4",
+                "type": "int",
+                "value": 15
+            }
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "name": "counter",
+        "properties": [
+            {
+                "name": "collision",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "collision4",
+                "type": "int",
+                "value": 15
+            },
+            {
+                "name": "counter",
+                "type": "bool",
+                "value": true
+            }
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "name": "poison",
+        "properties": [
+            {
+                "name": "terrainId",
+                "type": "int",
+                "value": 21
+            }
+        ]
+    },
+    {
+        "color": "#ff5500ff",
+        "name": "range",
+        "properties": [
+            {
+                "name": "objectId",
+                "type": "int",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "name": "room",
+        "properties": [
+            {
+                "name": "roomId",
+                "type": "int",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "color": "#ff00ff00",
+        "name": "tile",
+        "properties": [
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "name": "upper",
+        "properties": [
+            {
+                "name": "upper",
+                "type": "bool",
+                "value": true
+            }
+        ]
+    },
+    {
+        "color": "#ffa0a0a4",
+        "name": "walter",
+        "properties": [
+            {
+                "name": "anim",
+                "type": "int",
+                "value": 4
+            },
+            {
+                "name": "collision",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "collision4",
+                "type": "int",
+                "value": 15
+            }
+        ]
+    }
+]

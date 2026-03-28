@@ -1,0 +1,21 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Edge",
+      "type": "msedge",
+      "request": "launch",
+      "sourceMaps": true,
+      "url": "http://localhost:1234/",
+      "webRoot": "${workspaceRoot}", // ${workspaceRoot}/appではない
+      // Windowsの場合のみ以下設定が必要
+      "sourceMapPathOverrides": {
+        "webpack:*": "${webRoot}/*" // 動く
+        // "webpack:///./*": "*"  // 動かない
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "1F",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          103,
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "扉５",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 16,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          16,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          40
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "うさぎのつの",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 25,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          25,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          107,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  }
+]

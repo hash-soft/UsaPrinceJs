@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"宿泊客1","trigger":1,"imageId":15,"index":0,"direction":0,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":1}]},
+{"id":2,"name":"民家の人","trigger":1,"imageId":10,"index":4,"direction":0,"lockType":1,"moveRegionKey":"r2","moveType":1,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"大きな家人","trigger":1,"imageId":6,"index":0,"direction":0,"lockType":2,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"宿屋1Fへ","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"民家1Fへ","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":6,"name":"大きな家1Fへ","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":7,"name":"宿泊客2","trigger":1,"imageId":10,"index":7,"direction":2,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":5}]},
+{"id":8,"name":"扉１","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":6,"partId":5}]},
+{"id":9,"name":"扉２","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":7,"partId":5}]}
+]
+}

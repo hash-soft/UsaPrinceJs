@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"世界へ","trigger":8,"inout":"out","pages":[{"scriptId":1}]},
+{"id":2,"name":"船員","trigger":1,"imageId":9,"index":4,"direction":3,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"船","trigger":8,"imageId":18,"index":0,"direction":2,"lockType":0,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"住人","trigger":1,"imageId":9,"index":4,"direction":3,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":4}]},
+{"id":5,"name":"おばあさん","trigger":1,"imageId":9,"index":7,"direction":2,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":5}]}
+],
+"moveRoutes":[
+null,
+{"id":1,"repeat":false,"skippable":true,"moveFrequency":0,"list":[{"code":45},{"code":15,"parameters":[60]},{"code":24},{"code":15,"parameters":[60]},{"code":4,"parameters":[2]}]}
+]
+}

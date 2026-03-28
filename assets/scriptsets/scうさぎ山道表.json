@@ -1,0 +1,335 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "世界",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          73,
+          93,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "うさぎ王国",
+    "conditions": [],
+    "list": [
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          10,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          72,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          116,
+          -8,
+          46,
+          3,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "洞窟入口下",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          113,
+          39,
+          46,
+          3,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "洞窟入口上",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          114,
+          10,
+          46,
+          3,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "宝７５",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 105,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          105,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          47,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "宝７６",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 106,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          106,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          18,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "上を目指す人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ジャンプ台を　使って\nここまできたが　どうやっても\nこれ以上　上に行けない。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「どうやら　俺の　ジャンプ力では\nここが　限界のようだ…。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "立札",
+    "conditions": [],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          21,
+          21,
+          0,
+          1,
+          "山頂へ　歩む道なし。\nジャンプ台を　つかえ！",
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          125,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "裏への近道",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          112,
+          0,
+          0,
+          -1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "移動前設定",
+    "conditions": [],
+    "list": [
+      {
+        "code": 12,
+        "parameters": [
+          11,
+          11,
+          0,
+          0,
+          46
+        ]
+      },
+      {
+        "code": 12,
+        "parameters": [
+          13,
+          13,
+          0,
+          0,
+          47
+        ]
+      },
+      {
+        "code": 12,
+        "parameters": [
+          14,
+          14,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 116,
+        "parameters": [
+          0,
+          46
+        ]
+      }
+    ]
+  }
+]

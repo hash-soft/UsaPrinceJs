@@ -1,0 +1,381 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "B3",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          66,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "B1",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          64,
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "宝１９",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 49,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          49,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "宝２０",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 50,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          50,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "扉2",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 2,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          152,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "扉３",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 4,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          152,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "宝２１",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 51,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          1200,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          92,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "宝２２",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 52,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          52,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,おしまい,0,,,,,,,,in,,,,[,1,,,]

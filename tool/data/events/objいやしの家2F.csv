@@ -1,0 +1,5 @@
+comment,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,
+1,1Fへ,0x08,,,,,,,,in,,,,[,1,,]
+2,住人,0x01,10,6,1,2,,0,0,,,,,[,2,3,]

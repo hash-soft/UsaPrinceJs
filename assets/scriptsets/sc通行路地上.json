@@ -1,0 +1,314 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "世界北",
+    "conditions": [],
+    "list": [
+      {
+        "code": 116,
+        "parameters": [
+          0,
+          39
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          93,
+          102,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "世界南",
+    "conditions": [],
+    "list": [
+      {
+        "code": 116,
+        "parameters": [
+          0,
+          40
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          93,
+          104,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "扉１",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 1,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          40
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "扉２",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 2,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          40
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "扉３",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 57,
+        "param2": 4,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          52,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          40
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "B1",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          123,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "忠告する人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「湖の小島に　めずらしい花が\n咲いていることが　あるという。",
+          0
+        ]
+      }
+    ]
+  }
+]

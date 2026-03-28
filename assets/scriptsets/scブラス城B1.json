@@ -1,0 +1,730 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "囚人１",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「宝物庫に　忍び込んだまでは\nよかったが　バリアにやられて\nこのざまだ。",
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "囚人２",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          59,
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「牢を開けてくれた礼に\nオレしか　知らないことを　教えてやろう。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ラプリエール城には\n昔　青い光をはなつ　すごい剣が\nあったんだとよ。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「当時の　王子が　持ち出して\n剣はどこかに　いってしまった\nらしいぜ。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 52,
+        "parameters": []
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ラプリエール城にも\nすごい　お宝があるって\nうわさだ。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "食事係",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ここは　お城の　台所で\nございま～す。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "宝物庫",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 10,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「だれであっても　ここは\nとおしません！",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "看守",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ここは　あなたたちが\n来るところでは　ありません！",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「どうしても　囚人と\n話がしたければ\n牢屋ごしに　はなしかけてください。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "1Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          46,
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "からっぽ",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 42,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          42,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          93,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "かぜの",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 43,
+        "param2": 0,
+        "compare": 0
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          43,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          73,
+          73,
+          0,
+          0,
+          102,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          90,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "宝物庫後",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 10,
+        "param2": 0,
+        "compare": 1
+      }
+    ],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「王から　聞いています。\nさあ　どうぞ！",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "牢獄扉",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 59,
+        "param2": 1,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 17,
+        "parameters": [
+          11,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          6,
+          0,
+          65
+        ]
+      },
+      {
+        "code": 201,
+        "parameters": [
+          "開けられない場合は話す優先\n開けられる場合は扉優先\nとかめんどうな処理が必要"
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 131,
+        "parameters": [
+          1,
+          1
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          13,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "牢獄扉",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 59,
+        "param2": 2,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 17,
+        "parameters": [
+          11,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          6,
+          0,
+          65
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          5,
+          5,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          47,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          14,
+          5,
+          0,
+          13
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 57,
+        "parameters": [
+          "key"
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 33,
+        "parameters": [
+          15,
+          4,
+          0,
+          10
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 57,
+        "parameters": [
+          "key"
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 131,
+        "parameters": [
+          1,
+          2
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 56,
+        "parameters": [
+          "key"
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          6,
+          0,
+          260
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          13,
+          0
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          6,
+          0,
+          65
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 131,
+        "parameters": [
+          1,
+          -1
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "牢獄扉",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 59,
+        "param2": 4,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 17,
+        "parameters": [
+          11,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          6,
+          0,
+          260
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          13,
+          0
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          6,
+          0,
+          65
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 131,
+        "parameters": [
+          1,
+          -1
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "扉の処理共通",
+    "conditions": [],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          54,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          40
+        ]
+      }
+    ]
+  }
+]

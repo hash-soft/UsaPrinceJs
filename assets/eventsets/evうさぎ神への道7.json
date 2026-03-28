@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"6-1","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"うさぎ神","trigger":1,"imageId":41,"index":0,"direction":0,"lockType":0,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"end","trigger":8,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"7-1","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"end","trigger":8,"inout":"in","pages":[{"scriptId":5}]},
+{"id":6,"name":"4-1","trigger":8,"inout":"in","pages":[{"scriptId":6}]},
+{"id":7,"name":"4-2","trigger":8,"inout":"in","pages":[{"scriptId":7}]},
+{"id":8,"name":"6-1","trigger":8,"inout":"in","pages":[{"scriptId":8}]},
+{"id":9,"name":"6-2","trigger":8,"inout":"in","pages":[{"scriptId":9}]}
+]
+}

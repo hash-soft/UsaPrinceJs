@@ -1,0 +1,11 @@
+comment,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partOrder,layerIndex,priority,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,,
+1,B3,0x08,,,,,,,,in,,,,[,1,,,,]
+2,B1,0x08,,,,,,,,in,,,,[,2,,,,]
+3,宝１９,0x02,,,,,,,,in,,1,,[,,88,54,3,]
+4,宝２０,0x02,,,,,,,,in,,1,,[,,88,54,4,]
+5,扉２,0x104,,,,,,,,in,0,1,7,[,5,,51,,]
+6,扉３,0x104,,,,,,,,in,0,1,7,[,6,,51,,]
+3,宝１９,0x02,,,,,,,,in,,1,,[,,88,54,7,]
+4,宝２０,0x02,,,,,,,,in,,1,,[,,88,54,8,]

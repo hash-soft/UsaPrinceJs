@@ -1,0 +1,16 @@
+{
+"objects":[
+null,
+{"id":1,"name":"洞窟入口","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"隊列分離","trigger":0,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"ミミー","trigger":1,"imageId":3,"index":0,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"王子","trigger":1,"imageId":2,"index":0,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"ジャンプイベント","trigger":0,"inout":"in","pages":[{"scriptId":5}]}
+],
+"moveRoutes":[
+null,
+{"id":1,"repeat":false,"skippable":false,"moveFrequency":1,"list":[{"code":51,"parameters":[3]}]},
+{"id":2,"repeat":false,"skippable":false,"moveFrequency":1,"list":[{"code":51,"parameters":[2]},{"code":1,"parameters":[11]},{"code":2,"parameters":[14]},{"code":1,"parameters":[1]},{"code":2,"parameters":[2]}]},
+{"id":3,"repeat":false,"skippable":false,"moveFrequency":1,"list":[{"code":1,"parameters":[11]},{"code":2,"parameters":[15]},{"code":24}]}
+]
+}

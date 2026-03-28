@@ -1,0 +1,289 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "世界へ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          186,
+          280,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "2Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          25,
+          0,
+          0,
+          2,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "おばあさん",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 14,
+        "parameters": [
+          2,
+          1,
+          101,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「東の森に　\\s[item]が\n実る　木があるのじゃ。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「めったに　実らないのじゃが\n１個くらいは　あるじゃろう。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "扉１",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 1,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "扉２",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 2,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "おばあさん後",
+    "conditions": [
+      {
+        "type": 0,
+        "param1": 3,
+        "param2": 0,
+        "compare": 1
+      }
+    ],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「おお　あったのか！\nよかったのう。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "ev7",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 8,
+    "name": "ev8",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 9,
+    "name": "ev9",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 10,
+    "name": "ev10",
+    "conditions": [],
+    "list": []
+  }
+]

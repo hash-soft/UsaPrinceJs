@@ -1,0 +1,9 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,入り口,0x08,,,,,,,,in,,,[,1,,,,]
+2,B2,0x08,,,,,,,,in,,,[,2,,,,]
+3,宝１７,0x02,,,,,,,,in,,1,[,,88,54,3,]
+4,宝１８,0x02,,,,,,,,in,,1,[,,88,54,4,]
+5,扉,0x104,,,,,,,,in,1,1,[,5,,51,,]
+6,門番,0x01,40,0,0,0,,0,0,,,,[,6,,,,]

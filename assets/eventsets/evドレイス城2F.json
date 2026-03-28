@@ -1,0 +1,12 @@
+{
+"objects":[
+null,
+{"id":1,"name":"3F","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"1F","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"兵士１","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"兵士２","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r3","moveType":1,"moveRouteId":0,"pages":[{"scriptId":4}]},
+{"id":5,"name":"兵士３","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r2","moveType":0,"moveRouteId":0,"pages":[{"scriptId":5}]},
+{"id":6,"name":"住人１","trigger":1,"imageId":37,"index":0,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":6}]},
+{"id":7,"name":"住人２","trigger":1,"imageId":30,"index":0,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":7}]}
+]
+}

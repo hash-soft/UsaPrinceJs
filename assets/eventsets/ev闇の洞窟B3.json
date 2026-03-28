@@ -1,0 +1,8 @@
+{
+"objects":[
+null,
+{"id":1,"name":"B2","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"うさぎのはね","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":2}]},
+{"id":3,"name":"扉１","trigger":260,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":3,"partId":51}]}
+]
+}

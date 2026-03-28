@@ -1,0 +1,14 @@
+{ "columns":8,
+ "image":"..\/tilesets\/Inside_A5_Freem7.png",
+ "imageheight":512,
+ "imagewidth":256,
+ "margin":0,
+ "name":"\u57ce\u4e0b\u5c64",
+ "spacing":0,
+ "tilecount":128,
+ "tiledversion":"1.4.2",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":1.4
+}

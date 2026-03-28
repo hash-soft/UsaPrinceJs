@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["./test/*", "./src/*", "./static/lib/*"],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "ES2023",
+    "lib": ["dom", "ES2023"],
+    "module": "ES2022"
+  }
+}

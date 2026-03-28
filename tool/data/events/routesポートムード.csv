@@ -1,0 +1,6 @@
+comment,,繰り返すか,移動できない場合とばすか,移動頻度,動作リスト,,,,,,,,,,,,,,,
+id,,repeat,skippable,moveFrequency,*list*,0.code,0.parameters,1.code,1.parameters,2.code,2.parameters,3.code,3.parameters,4.code,4.parameters,5.code,5.parameters,6.code,6.parameters,*list*
+null,,,,,,,,,,,,,,,,,,,,
+1,北出航,false,true,0,[,45,,15,*[60]*,22,,15,*[60]*,2,*[2]*,,,,,]
+2,西出航,false,true,0,[,45,,15,*[60]*,21,,15,*[60]*,1,*[2]*,,,,,]
+3,大陸船員,false,true,0,[,45,,1,*[2]*,49,,,,,,,,,,]

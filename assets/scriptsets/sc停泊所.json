@@ -1,0 +1,420 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "世界へ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          108,
+          249,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "船員",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「陸には　ついたけど\nなんにもないな……。",
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "船",
+    "conditions": [],
+    "list": [
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          1024,
+          0,
+          6
+        ]
+      },
+      {
+        "code": 152,
+        "parameters": [
+          1,
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          -1,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          1024,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 109,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          10,
+          10,
+          0,
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          109,
+          249,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          18,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 109,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          18,
+          1,
+          6
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          1024,
+          1,
+          6
+        ]
+      },
+      {
+        "code": 109,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 106,
+        "parameters": [
+          2,
+          1
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          31,
+          11,
+          14,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          10,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "宿泊所",
+    "conditions": [],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          71,
+          71,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          21,
+          21,
+          0,
+          1,
+          "※「急ぎで　休める場所を\n用意しました。\nお休みになりますか？",
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          22,
+          22,
+          0,
+          1,
+          "※「ごゆっくり　お休みくださいませ。",
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          23,
+          23,
+          0,
+          1,
+          "※「いってらっしゃいませ。",
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          24,
+          24,
+          0,
+          1,
+          "※「お金がたりませんよ。",
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          25,
+          25,
+          0,
+          1,
+          "※「無理しないで　くださいね。",
+          0
+        ]
+      },
+      {
+        "code": 201,
+        "parameters": [
+          "セリフ設定Id格納"
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "診療所",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「わしも　ついてきて\n正解じゃったな。",
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          76,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "スタートアップ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          105,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "道具屋",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 21,
+        "parameters": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「こんなことも　あろうかと\n道具を持ってきました！",
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          58,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "兵士",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「人のいる場所を\n探そうと思います。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "ev9",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 10,
+    "name": "ev10",
+    "conditions": [],
+    "list": []
+  }
+]

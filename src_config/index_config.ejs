@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <title>up-config</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" type="text/css" href="./index_config.css" />
+  </head>
+
+  <body>
+    <main class="w-full flex-grow">
+      <img
+        id="trash-svg"
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDkxIDkxIiBoZWlnaHQ9IjkxcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA5MSA5MSIgd2lkdGg9IjkxcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwYXRoIGQ9Ik02Ny4zMDUsMzYuNDQydi04LjA1NWMwLTAuOTM5LTAuNzYyLTEuNzAxLTEuNy0xLjcwMUg1NC4zNDJ2LTUuNTI0YzAtMC45MzgtMC43NjEtMS43LTEuNjk5LTEuN2gtMTIuNzUgICBjLTAuOTM5LDAtMS43MDEsMC43NjItMS43MDEsMS43djUuNTI0SDI2LjkzYy0wLjkzOSwwLTEuNywwLjc2Mi0xLjcsMS43MDF2OC4wNTVjMCwwLjkzOCwwLjc2MSwxLjY5OSwxLjcsMS42OTloMC40ODh2MzQuMDIxICAgYzAsMC45MzgsMC43NjEsMS43LDEuNjk5LDEuN2gyOS40ODFjMy41OTUsMCw2LjUyLTIuOTI0LDYuNTItNi41MThWMzguMTQyaDAuNDg2QzY2LjU0MywzOC4xNDIsNjcuMzA1LDM3LjM4MSw2Ny4zMDUsMzYuNDQyeiAgICBNNDEuNTkyLDIyLjg2Mmg5LjM1djMuODI0aC05LjM1VjIyLjg2MnogTTYxLjcxOSw2Ny4zNDVjMCwxLjcxOS0xLjQsMy4xMTctMy4xMiwzLjExN2gtMjcuNzh2LTMyLjMybDMwLjksMC4wMDJWNjcuMzQ1eiAgICBNNjMuOTA0LDM0Ljc0MkgyOC42Mjl2LTQuNjU1aDExLjI2NGgxMi43NWgxMS4yNjJWMzQuNzQyeiIvPjxyZWN0IGhlaWdodD0iMTkuOTc1IiB3aWR0aD0iMy40IiB4PSIzNi4wNjYiIHk9IjQ0Ljk2MiIvPjxyZWN0IGhlaWdodD0iMTkuOTc1IiB3aWR0aD0iMy40IiB4PSI0NC41NjYiIHk9IjQ0Ljk2MiIvPjxyZWN0IGhlaWdodD0iMTkuOTc1IiB3aWR0aD0iMy40IiB4PSI1My4wNjYiIHk9IjQ0Ljk2MiIvPjwvZz48L3N2Zz4="
+        class="hidden"
+      />
+      <div class="flex justify-between items-center bg-gray-200">
+        <nav class="flex flex-col sm:flex-row">
+          <button
+            name="tab-text"
+            class="text-gray-600 py-1 px-6 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500"
+          >
+            キーボード
+          </button>
+          <button
+            name="tab-text"
+            class="text-gray-600 py-1 px-6 block hover:text-blue-500 focus:outline-none"
+          />
+          ゲームパッド
+        </nav>
+        <div class="px-2">
+          <button
+            id="save"
+            class="w-[120px] rounded-md bg-green-600 py-1 px-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-green-700 focus:shadow-none active:bg-green-700 hover:bg-green-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+            type="button"
+          >
+            保存
+          </button>
+          <button
+            id="cancel"
+            class="w-[120px] rounded-md border border-transparent py-1 px-6 text-center text-sm transition-all text-slate-600 hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+          >
+            キャンセル
+          </button>
+        </div>
+      </div>
+      <div class="bg-white p-1">
+        <div id="" name="tab-content" class="block">
+          <table class="w-full text-md bg-white shadow-md rounded mb-4">
+            <tbody>
+              <tr class="border-b bg-violet-100">
+                <th class="text-left p-3 px-5 w-[250px]">操作</th>
+                <th class="text-left p-3 px-5">キー</th>
+                <th class="text-left p-3 px-5"></th>
+              </tr>
+              <tr
+                class="border-b hover:bg-yellow-300 bg-yellow-300"
+                name="keyboard-row"
+              >
+                <td class="p-3 px-5">メニュー/決定</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-yellow-100" name="keyboard-row">
+                <td class="p-3 px-5">閉じる/キャンセル</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-yellow-100" name="keyboard-row">
+                <td class="p-3 px-5">マルチ/決定</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-yellow-100" name="keyboard-row">
+                <td class="p-3 px-5">すべて閉じる/キャンセル</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-yellow-100" name="keyboard-row">
+                <td class="p-3 px-5">上</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-yellow-100" name="keyboard-row">
+                <td class="p-3 px-5">下</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-yellow-100" name="keyboard-row">
+                <td class="p-3 px-5">左</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-yellow-100" name="keyboard-row">
+                <td class="p-3 px-5">右</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="px-2">
+            <button
+              id="keyboard-all-delete"
+              class="w-[120px] rounded-md bg-red-600 py-1 px-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-red-700 focus:shadow-none active:bg-red-700 hover:bg-red-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+              type="button"
+            >
+              全削除
+            </button>
+            <button
+              id="keyboard-default"
+              class="w-[120px] rounded-md bg-gray-600 py-1 px-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-gray-700 focus:shadow-none active:bg-gray-700 hover:bg-gray-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+              type="button"
+            >
+              デフォルト
+            </button>
+          </div>
+        </div>
+        <div id="" name="tab-content" class="hidden">
+          <table class="w-full text-md bg-white shadow-md rounded mb-4">
+            <tbody>
+              <tr class="border-b bg-violet-100">
+                <th class="text-left p-3 px-5 w-[250px]">操作</th>
+                <th class="text-left p-3 px-5">キー</th>
+                <th class="text-left p-3 px-5"></th>
+              </tr>
+              <!--- 順番を飛ばすのでnameを付けない -->
+              <tr class="border-b hover:bg-blue-100" id="gamepad-axes-row">
+                <td class="p-3 px-5">入力キー</td>
+                <td class="p-3">未入力</td>
+                <td class="p-3 px-5"></td>
+              </tr>
+              <tr
+                class="border-b hover:bg-blue-300 bg-blue-300"
+                name="gamepad-row"
+              >
+                <td class="p-3 px-5">メニュー/決定</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-100" name="gamepad-row">
+                <td class="p-3 px-5">閉じる/キャンセル</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-100" name="gamepad-row">
+                <td class="p-3 px-5">マルチ/決定</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-100" name="gamepad-row">
+                <td class="p-3 px-5">すべて閉じる/キャンセル</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-100" name="gamepad-row">
+                <td class="p-3 px-5">上</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-100" name="gamepad-row">
+                <td class="p-3 px-5">下</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-100" name="gamepad-row">
+                <td class="p-3 px-5">左</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-100" name="gamepad-row">
+                <td class="p-3 px-5">右</td>
+                <td class="p-3 px-5">
+                  <ul class="shadow-md"></ul>
+                </td>
+                <td class="p-3 px-5">
+                  <div class="flex justify-end">
+                    <button
+                      type="button"
+                      class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      削除
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="px-2">
+            <button
+              id="gamepad-all-delete"
+              class="w-[120px] rounded-md bg-red-600 py-1 px-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-red-700 focus:shadow-none active:bg-red-700 hover:bg-red-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+              type="button"
+            >
+              全削除
+            </button>
+            <button
+              id="gamepad-default"
+              class="w-[120px] rounded-md bg-gray-600 py-1 px-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-gray-700 focus:shadow-none active:bg-gray-700 hover:bg-gray-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+              type="button"
+            >
+              デフォルト
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
+        id="modal"
+      >
+        <div class="relative w-auto my-6 mx-auto max-w-sm">
+          <!--content-->
+          <div
+            class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
+          >
+            <!--header-->
+            <div
+              class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t"
+            >
+              <h3 class="text-3xl font-semibold">保存に失敗しました</h3>
+              <button
+                class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+              >
+                <span
+                  class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"
+                >
+                  ×
+                </span>
+              </button>
+            </div>
+            <!--body-->
+            <div class="relative p-6 flex-auto">
+              <p class="my-4 text-blueGray-500 text-lg leading-relaxed">
+                ファイルが書き込み可能か確認して再度実行してください
+              </p>
+            </div>
+            <!--footer-->
+            <div
+              class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b"
+            >
+              <button
+                id="modal-close"
+                class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                type="button"
+              >
+                閉じる
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden opacity-25 fixed inset-0 z-40 bg-black"
+        id="modal-backdrop"
+      ></div>
+    </main>
+  </body>
+</html>

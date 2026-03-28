@@ -1,0 +1,17 @@
+comment,名前,攻撃,複数攻撃の補正を受ける,数値Id,行動タイプ
+comment,,,,,NumberList指定
+comment,,,,,
+comment,,,,,
+id,,attack,conditional,figureId,actionTypes
+null,,,,,
+1,防御,false,false,19,0
+2,防御２,false,false,19,0
+3,炎息軽減,false,false,18,14
+4,氷息軽減,false,false,18,15
+5,腹痛,false,false,47,0
+6,ちからため,true,true,23,13
+7,2.5倍,true,true,24,13
+8,３倍,true,true,25,13
+9,こうげきアップ,true,true,23,13
+10,攻撃減,true,false,19,13
+11,1.25倍,true,false,63,13

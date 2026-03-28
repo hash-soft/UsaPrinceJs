@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"B5","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"扉５","trigger":260,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":2,"partId":53}]},
+{"id":3,"name":"宝３０","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":4,"name":"ダスク","trigger":0,"imageId":20,"index":0,"direction":3,"lockType":0,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":4}]}
+],
+"moveRoutes":[
+null,
+{"id":1,"repeat":false,"skippable":false,"moveFrequency":1,"list":[{"code":45},{"code":18,"parameters":[0,28]},{"code":19,"parameters":[0,7]},{"code":51,"parameters":[2]}]},
+{"id":2,"repeat":false,"skippable":false,"moveFrequency":1,"list":[{"code":19,"parameters":[0,11]},{"code":51,"parameters":[2]}]}
+]
+}

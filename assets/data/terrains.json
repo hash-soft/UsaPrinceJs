@@ -1,0 +1,17 @@
+[
+null,
+{"id":1,"name":"草原","encounterRateId":31,"battleBackName":"pipo-battlebg001a.jpg","damage":{"value":0,"animationId":0}},
+{"id":2,"name":"しげみ","encounterRateId":32,"battleBackName":"pipo-battlebg001a.jpg","damage":{"value":0,"animationId":0}},
+{"id":3,"name":"森","encounterRateId":33,"battleBackName":"pipo-battlebg002a.jpg","damage":{"value":0,"animationId":0}},
+{"id":4,"name":"山","encounterRateId":34,"battleBackName":"pipo-battlebg006a.jpg","damage":{"value":0,"animationId":0}},
+{"id":5,"name":"砂漠","encounterRateId":35,"battleBackName":"pipo-battlebg003a.jpg","damage":{"value":0,"animationId":0}},
+{"id":6,"name":"毒沼","encounterRateId":36,"battleBackName":"pipo-battlebg010a.jpg","damage":{"value":2,"animationId":21}},
+{"id":7,"name":"岩山","encounterRateId":37,"battleBackName":"pipo-battlebg005a.jpg","damage":{"value":0,"animationId":0}},
+{"id":8,"name":"海","encounterRateId":38,"battleBackName":"pipo-battlebg007a.jpg","damage":{"value":0,"animationId":0}},
+{"id":9,"name":"ダンジョン","encounterRateId":39,"battleBackName":"pipo-battlebg008a.jpg","damage":{"value":0,"animationId":0}},
+{"id":10,"name":"塔","encounterRateId":39,"battleBackName":"pipo-battlebg009a.jpg","damage":{"value":0,"animationId":0}},
+{"id":11,"name":"バリア","encounterRateId":36,"battleBackName":"pipo-battlebg010a.jpg","damage":{"value":15,"animationId":47}},
+{"id":12,"name":"しんどう","encounterRateId":31,"battleBackName":"pipo-battlebg020a_s094.png","damage":{"value":0,"animationId":0}},
+{"id":13,"name":"レイドス外","encounterRateId":39,"battleBackName":"pipo-battlebg014a.jpg","damage":{"value":0,"animationId":0}},
+{"id":14,"name":"レイドス中","encounterRateId":39,"battleBackName":"pipo-battlebg015a.jpg","damage":{"value":0,"animationId":0}}
+]

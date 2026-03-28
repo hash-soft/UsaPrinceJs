@@ -1,0 +1,10 @@
+comment,,,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,priority,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,1.imageId,1.lockType,*pages*
+null,,,,,,,,,,,,,,,,,,,,,
+1,世界北,0x08,,,,,,,,in,,,,[,1,,,,,,]
+2,世界南,0x08,,,,,,,,in,,,,[,2,,,,,,]
+3,扉１,0x104,,,,,,,,in,,1,,[,3,,2,,,,]
+4,扉２,0x104,,,,,,,,in,,1,,[,4,,2,,,,]
+5,扉３,0x104,,,,,,,,in,,1,,[,5,,2,,,,]
+6,B1,0x08,,,,,,,,in,,,,[,6,,,,,,]
+7,忠告する人,0x01,52,0,1,1,,0,0,,,,,[,7,,,,,,]

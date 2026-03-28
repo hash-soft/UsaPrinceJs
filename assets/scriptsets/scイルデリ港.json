@@ -1,0 +1,423 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "世界へ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          184,
+          215,
+          0,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "船員",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          20,
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 33,
+        "parameters": [
+          20,
+          6,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「なんだ　もう帰るのか？",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 52,
+        "parameters": []
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ポートムードに　帰るのか？",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          13,
+          0
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 5,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          -1,
+          0,
+          5
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          20,
+          20,
+          6,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 52,
+        "parameters": []
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「帰りたくなったら\nいつでも　言ってくれ。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "船",
+    "conditions": [],
+    "list": [
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          1024,
+          0,
+          6
+        ]
+      },
+      {
+        "code": 152,
+        "parameters": [
+          1,
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          -1,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          1024,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 109,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          10,
+          10,
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          1,
+          184,
+          216,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          17,
+          1,
+          2
+        ]
+      },
+      {
+        "code": 109,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          17,
+          1,
+          4
+        ]
+      },
+      {
+        "code": 108,
+        "parameters": [
+          0,
+          1024,
+          1,
+          4
+        ]
+      },
+      {
+        "code": 109,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 106,
+        "parameters": [
+          2,
+          1
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          31,
+          15,
+          13,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          10,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "家にいる人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「この港はけっこう\n人の出入りが　多いんだ。\n魔法使い　さまさまだな。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "おばあさん",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「魔法使いに　会いに行こうと\nここまで　きたんじゃが……。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「道のりが　けわしく\nわしには　むりじゃった……。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "スタートアップ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          105,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "出航セリフ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 1,
+        "parameters": [
+          "※「すぐ　出航だ。\nそこの船に　乗ってくれ！",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "ev8",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 9,
+    "name": "ev9",
+    "conditions": [],
+    "list": []
+  },
+  {
+    "id": 10,
+    "name": "ev10",
+    "conditions": [],
+    "list": []
+  }
+]

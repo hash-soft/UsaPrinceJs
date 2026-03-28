@@ -1,0 +1,17 @@
+{
+"objects":[
+null,
+{"id":1,"name":"囚人１","trigger":1,"imageId":4,"index":0,"direction":0,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":1}]},
+{"id":2,"name":"囚人２","trigger":1,"imageId":4,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"食事係","trigger":1,"imageId":10,"index":3,"direction":0,"lockType":1,"moveType":1,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"宝物庫","trigger":1,"imageId":15,"index":0,"direction":0,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":4}]},
+{"id":5,"name":"看守","trigger":1,"imageId":15,"index":0,"direction":0,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":5}]},
+{"id":6,"name":"1Fへ","trigger":8,"inout":"in","pages":[{"scriptId":6}]},
+{"id":7,"name":"宝１","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":4},{"scriptId":7}]},
+{"id":8,"name":"宝２","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":4},{"scriptId":8}]},
+{"id":9,"name":"宝物庫後","trigger":1,"imageId":15,"index":0,"direction":2,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":9}]},
+{"id":10,"name":"牢獄","trigger":261,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":10,"partId":6}]},
+{"id":11,"name":"牢獄","trigger":261,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":11,"partId":6}]},
+{"id":12,"name":"牢獄","trigger":261,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":12,"partId":6}]}
+]
+}

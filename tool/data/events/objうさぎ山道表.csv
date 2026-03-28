@@ -1,0 +1,13 @@
+comment,,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,priority,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,0.partId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,,,
+1,世界,0x08,,,,,,,,in,,,,,[,1,,,,]
+2,うさぎ王国,0x08,,,,,,,,in,,,,,[,2,,,,]
+3,洞窟入口１,0x08,,,,,,,,in,,,,,[,3,,,,]
+4,洞窟入口２,0x08,,,,,,,,in,,,,,[,4,,,,]
+5,宝７５,0x02,,,,,,,,in,,,,1,[,,88,54,5,]
+6,宝７６,0x02,,,,,,,,in,,,,1,[,,88,54,6,]
+7,ジャンプ台,0x08,,,,,,,,out,0,,,,[,,145,,,]
+8,上に行けない人,0x01,39,0,0,1,r1,1,0,,,,,,[,7,,,,]
+9,立札,0x02,,,,,,,,in,,,,,[,8,,,,]
+10,裏への近道,0x08,,,,,,,,in,,,,,[,9,,,,]

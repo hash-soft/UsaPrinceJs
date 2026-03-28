@@ -1,0 +1,421 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "宿泊客1",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          11,
+          11,
+          0,
+          3,
+          15,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ブラス城に　帰るのが\nめんどうに　なってしまいました……。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 52,
+        "parameters": []
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ピクサル山の　がけ崩れで\nブラス城に　帰れなくなって\nしまいました……。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "民家の人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 14,
+        "parameters": [
+          2,
+          1,
+          102,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          11,
+          11,
+          0,
+          3,
+          15,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「どこかの　旅の１行が\n\\s[item]を　もってきて\n西の大陸に　渡ったらしい。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「一体　何者なんだ！？",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 52,
+        "parameters": []
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「\\s[item]が\nあれば　自由自在に\n船を動かせるという　うわさだ。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ブラス王国の　家宝らしいが\n一体どうやって　そんなものを\n手に入れられるのだろうか。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "大きな家の人",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          11,
+          11,
+          0,
+          3,
+          15,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          11,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ピクサル山が　がけ崩れだったとは。\nそれなら　しかたないな……。",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 52,
+        "parameters": []
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「なんだ　君たちは！\n勝手に　入ってくるんじゃない！",
+          0
+        ]
+      },
+      {
+        "code": 53,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "1Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          31,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "宿泊客2",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「北の島へは　この町から\n出ている船で　いけるそうですじゃ。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "扉４",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 8,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "扉５",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 16,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          16,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36,
+          0
+        ]
+      }
+    ]
+  }
+]

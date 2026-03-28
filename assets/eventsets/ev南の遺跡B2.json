@@ -1,0 +1,13 @@
+{
+"objects":[
+null,
+{"id":1,"name":"B3","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"B1","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"宝１９","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":3}]},
+{"id":4,"name":"宝２０","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":4}]},
+{"id":5,"name":"扉２","trigger":260,"inout":"in","partOrder":0,"layerIndex":1,"priority":7,"pages":[{"scriptId":5,"partId":51}]},
+{"id":6,"name":"扉３","trigger":260,"inout":"in","partOrder":0,"layerIndex":1,"priority":7,"pages":[{"scriptId":6,"partId":51}]},
+{"id":7,"name":"宝１９","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":7}]},
+{"id":8,"name":"宝２０","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":8}]}
+]
+}

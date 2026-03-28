@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"1-4","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"1-5","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"5-1","trigger":8,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"5-2","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"宝８２","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":5}]},
+{"id":6,"name":"end","trigger":8,"inout":"in","pages":[{"scriptId":6}]},
+{"id":7,"name":"4-2","trigger":8,"inout":"in","pages":[{"scriptId":7}]},
+{"id":8,"name":"6-1","trigger":8,"inout":"in","pages":[{"scriptId":8}]},
+{"id":9,"name":"6-2","trigger":8,"inout":"in","pages":[{"scriptId":9}]}
+]
+}

@@ -1,0 +1,500 @@
+[
+  {},
+  {
+    "id": 1,
+    "name": "2Fへ",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          71,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "parameters": [
+          0,
+          47,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "name": "王様",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          5,
+          5,
+          0,
+          2,
+          10,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 33,
+        "parameters": [
+          5,
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 51,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "王「宝物庫の　兵士に\n話を　通しておいた。",
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          10,
+          0
+        ]
+      },
+      {
+        "code": 58,
+        "parameters": []
+      },
+      {
+        "code": 53,
+        "parameters": []
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          62,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          63,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          64,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "王「\\s[rn]か。　よくぞ　もどった！\n\\s[pn]と\\s[mn]にも　礼を言おう。\nだが　まだ呪いは　解けていないのか？",
+          0
+        ]
+      },
+      {
+        "code": 15,
+        "parameters": [
+          1,
+          7,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          23,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "\\s[actor]は　これまでのことを\n話した。",
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 14,
+        "parameters": [
+          2,
+          1,
+          102,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "王「わかった！　\\s[item]を\n持っていくがよい。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "王「宝物庫の　兵士に\n話を　通しておこう。",
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "parameters": [
+          0,
+          10,
+          0
+        ]
+      },
+      {
+        "code": 11,
+        "parameters": [
+          10,
+          10,
+          1,
+          0
+        ]
+      }
+    ],
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "name": "大臣",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「よくぞ　ご無事で！",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ラプリエールまで　飛んでいくと\n聞いたときは\nもうだめかと　思いましたぞ。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "兵士",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「王は　この先に　おわします。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「王子！？　戻っておられたとは！",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "王様の部屋",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ここは　王さまの部屋です。\n勝手に入っては　なりません。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "王子の部屋",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          22,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          63,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「ここは　王子さまの部屋です。\n勝手に入っては……",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「これは\\s[rn]王子。失礼しました！",
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "扉８",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 128,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          128,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "扉９",
+    "conditions": [
+      {
+        "type": 2,
+        "param1": 56,
+        "param2": 256,
+        "compare": 7
+      }
+    ],
+    "list": [
+      {
+        "code": 13,
+        "parameters": [
+          54,
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          74,
+          74,
+          0,
+          0,
+          256,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          75,
+          75,
+          0,
+          0,
+          51,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 13,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          56,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          36,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "見張り",
+    "conditions": [],
+    "list": [
+      {
+        "code": 112,
+        "parameters": [
+          0,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「西には　山頂　に抜ける\n洞窟があります。",
+          0
+        ]
+      },
+      {
+        "code": 1,
+        "parameters": [
+          "※「山頂から　おもいっきり　飛べば\n山をこえらえるかも！\nと　一度は考えますよね。",
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "王共通mes",
+    "conditions": [],
+    "list": [
+      {
+        "code": 1,
+        "parameters": [
+          "王「再び　戻ってくる　その時を\n楽しみにしておるぞ。",
+          0
+        ]
+      }
+    ]
+  }
+]

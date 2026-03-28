@@ -1,0 +1,12 @@
+{
+"objects":[
+null,
+{"id":1,"name":"世界北","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"世界南","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"扉１","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":3,"partId":2}]},
+{"id":4,"name":"扉２","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":4,"partId":2}]},
+{"id":5,"name":"扉３","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":5,"partId":2}]},
+{"id":6,"name":"B1","trigger":8,"inout":"in","pages":[{"scriptId":6}]},
+{"id":7,"name":"忠告する人","trigger":1,"imageId":52,"index":0,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":7}]}
+]
+}

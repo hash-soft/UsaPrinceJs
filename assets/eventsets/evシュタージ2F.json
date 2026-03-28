@@ -1,0 +1,15 @@
+{
+"objects":[
+null,
+{"id":1,"name":"1F-1","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"1F-2","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":3,"name":"宝３７","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":4},{"scriptId":2}]},
+{"id":4,"name":"宝３８","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":4},{"scriptId":3}]},
+{"id":5,"name":"仲間の説明","trigger":1,"imageId":30,"index":0,"direction":0,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":4},{"scriptId":10}]},
+{"id":6,"name":"魔法使い","trigger":1,"imageId":23,"index":0,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":5},{"scriptId":11}]},
+{"id":7,"name":"戦士","trigger":1,"imageId":21,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":6},{"scriptId":12}]},
+{"id":8,"name":"僧侶","trigger":1,"imageId":22,"index":0,"direction":2,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":7},{"scriptId":13}]},
+{"id":9,"name":"旅人１","trigger":1,"imageId":39,"index":0,"direction":2,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":8}]},
+{"id":10,"name":"旅人２","trigger":1,"imageId":39,"index":0,"direction":1,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":9}]}
+]
+}

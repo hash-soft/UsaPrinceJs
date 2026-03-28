@@ -1,0 +1,12 @@
+comment,,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,1.scriptId,1.moveType,*pages*
+null,,,,,,,,,,,,,,,,,,,
+1,世界へ,0x08,,,,,,,,out,,,,[,1,,,,]
+2,案内,0x01,29,0,0,1,,1,0,,,,,[,2,,,,]
+3,育てる人,0x01,31,0,0,1,r1,1,0,,,,,[,3,,8,0,]
+4,宿屋,0x01,35,0,0,1,,0,0,,,,,[,4,,,,]
+5,診療所,0x01,33,0,2,1,,0,0,,,,,[,5,,,,]
+6,道具屋,0x01,36,0,0,1,,0,0,,,,,[,6,,,,]
+7,冒険者,0x01,39,0,1,1,,0,0,,,,,[,7,,,,]
+8,セーブ,0x02,,,,,,,,in,,,,[,,15,,,]
+9,ベリー,0,,,,,,,,in,9,0,1,[,8,,,,]

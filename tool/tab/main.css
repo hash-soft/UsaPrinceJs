@@ -1,0 +1,168 @@
+div#slotInput {
+  width: 300px;
+  height: 170px;
+  background: rgba(255, 137, 167, 0.7);
+  position: relative;
+}
+
+/*ベース*/
+section.typeA {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 80%;
+  height: 75%;
+}
+section.typeA::after {
+  content: '';
+  width: 100%;
+  height: 2%;
+  order: -1;
+  display: block;
+  background: rgba(0, 137, 167, 0.7);
+}
+
+section.typeA .tabLabel {
+  /* タブ */
+  margin-right: 3px;
+  padding: 1% 1.3%;
+  height: 15%;
+  flex: 1;
+  order: -1;
+  border-radius: 3px 3px 0 0;
+  color: #444;
+  background: rgba(0, 137, 167, 0.3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+section.typeA .tabLabel:nth-last-of-type(1) {
+  margin-right: 0;
+}
+section.typeA input[type='radio'] {
+  /* ラジオボタン非表示 */
+  display: none;
+}
+section.typeA .content {
+  /* 本文 */
+  width: 100%;
+  height: 56%;
+  padding: 15px;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+}
+
+/* テキストエリア */
+section.typeA .content .text {
+  width: 90%;
+  resize: none;
+}
+
+/*アクティブ設定*/
+section.typeA input:checked + .tabLabel {
+  color: #fff;
+  background: rgba(0, 137, 167, 0.7);
+}
+section.typeA input:checked + .tabLabel + .content {
+  padding: 15px;
+  overflow: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s opacity;
+  display: block;
+  opacity: 1;
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  flex: 1;
+  order: -1;
+  background-color: #d9d9d9;
+  border-radius: 3px 3px 0 0;
+  margin-right: 3px;
+  text-align: center;
+  color: #565656;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.tabs::after {
+  content: '';
+  width: 100%;
+  height: 2%;
+  order: -1;
+  display: block;
+  background: rgba(0, 137, 167, 0.7);
+}
+
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name='tab_item'] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  opacity: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+/*#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content {
+  display: block;
+}*/
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+
+.tabs input:checked + .tab_item + .tab_content {
+  height: 65%;
+  transition: 0.5s opacity;
+  padding: 5% 5% 0;
+  opacity: 1;
+}
+
+/* テキストエリア */
+div.tabs .text {
+  width: 90%;
+  resize: none;
+}
+
+div.buttonGroup {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1% 5%;
+}
+
+div.buttonGroup .decide {
+  border-radius: 8px;
+}
+
+div.buttonGroup .decide:hover {
+  opacity: 0.7;
+}

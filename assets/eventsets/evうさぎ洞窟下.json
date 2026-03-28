@@ -1,0 +1,8 @@
+{
+"objects":[
+null,
+{"id":1,"name":"表","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"裏1","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"裏1","trigger":8,"inout":"in","pages":[{"scriptId":3}]}
+]
+}

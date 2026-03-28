@@ -1,0 +1,1618 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "mapWorldParts.json",
+    "automapping.whileDrawing": false,
+    "expandedProjectPaths": [
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets",
+        ".",
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets",
+        "D:/Programing/project/kaeru/game/assets/tilesets"
+    ],
+    "exportAsImage.drawTileGrid": false,
+    "exportAsImage.includeBackgroundColor": false,
+    "exportAsImage.useCurrentScale": false,
+    "exportAsImage.visibleLayersOnly": true,
+    "file.lastUsedOpenFilter": "すべてのファイル (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 239.33333333333331,
+                "y": 111.33333333333331
+            }
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json#ベース": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json#上層１": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json#上層２": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/タイルテスト.json": {
+            "scale": 1.0147727272727272,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 532.6315789473686,
+                "y": 175.40873460246365
+            }
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/タイルテスト.json#オートタイル": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/世界.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/共通上層.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/町下層.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/tilesets/町外観.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Downloads/examples/desert.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Downloads/examples/hexagonal-mini.tmx#hex mini": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Downloads/examples/orthogonal-outside.tmx#outdoor": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Downloads/examples/perspective_walls.tmx#sewer_tileset": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Downloads/examples/perspective_walls.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Downloads/examples/sewers.tmx#sewer_tileset": {
+            "scaleInDock": 1
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json": {
+            "scale": 2.6921875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 190.9228090539756,
+                "y": 6.686012768427162
+            }
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json#ベース": {
+            "scaleInDock": 1
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json#上層１": {
+            "scaleInDock": 1
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/タイルセット_世界.json#上層２": {
+            "scaleInDock": 1
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/ダンジョン下層.json": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 3
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/ダンジョン下層_u.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/世界.json": {
+            "scaleInDock": 2,
+            "scaleInEditor": 2
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/共通上層.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/町下層.json": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1.5
+        },
+        "D:/Programing/project/kaeru/game/assets/tilesets/町下層_u.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "attribute.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "castle.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "field.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "groupmap.json": {
+            "scale": 1.7050520833333331,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 480.337233100162,
+                "y": 480.3372331001619
+            }
+        },
+        "map001.json": {
+            "scale": 2.7609375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.13582342954163,
+                "y": 240.1358234295416
+            }
+        },
+        "map001.json#spritesheet": {
+            "scaleInDock": 1
+        },
+        "map002.json": {
+            "scale": 0.662625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1000.5659309564235,
+                "y": 1000.5659309564234
+            }
+        },
+        "map002.json#spritesheet20": {
+            "scaleInDock": 1
+        },
+        "mapDungeonParts.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 0.9724905303030302,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 512.0872486489119,
+                "y": 512.6013924728566
+            }
+        },
+        "mapTownParts.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.739501953125,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 512.2155789473684,
+                "y": 511.92814035087713
+            }
+        },
+        "mapWorldParts.json": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 511,
+                "y": 511.5
+            }
+        },
+        "mapいやしのじじいの家.json": {
+            "expandedObjectLayers": [
+                4,
+                3
+            ],
+            "scale": 1.0656575520833333,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 750.7102055777866,
+                "y": 462.62516418731104
+            }
+        },
+        "mapいやしの家.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "mapいやしの家2F.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.0656575520833333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.539572960259,
+                "y": 768.0703790817729
+            }
+        },
+        "mapうさぎ山道表.json": {
+            "expandedObjectLayers": [
+                7,
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1022,
+                "y": 2547.5
+            }
+        },
+        "mapうさぎ山道裏.json": {
+            "expandedObjectLayers": [
+                7,
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1024,
+                "y": 2303.5
+            }
+        },
+        "mapうさぎ洞窟上.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapうさぎ洞窟下.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "mapうさぎ王国.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 896,
+                "y": 1023.5
+            }
+        },
+        "mapうさぎ神への道1.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1024,
+                "y": 1023.5
+            }
+        },
+        "mapうさぎ神への道2.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 768.5
+            }
+        },
+        "mapうさぎ神への道3.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapうさぎ神への道4.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768,
+                "y": 768.5
+            }
+        },
+        "mapうさぎ神への道5.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 768.5
+            }
+        },
+        "mapうさぎ神への道6.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapうさぎ神への道7.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapアルビエ.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640,
+                "y": 639.6666666666665
+            }
+        },
+        "mapアルビエ2F.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.2787890625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640.4496441335492,
+                "y": 640.0586492348107
+            }
+        },
+        "mapイトランド城1F.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapイトランド城2F.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapイトランド城B1.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapイリシア.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapイリシアB1.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapイルデリ港.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.0656575520833333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.539572960259,
+                "y": 768.0703790817729
+            }
+        },
+        "mapシトラス城1F.json": {
+            "scale": 0.9446022727272726,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 767.5187969924814,
+                "y": 767.5187969924812
+            }
+        },
+        "mapシトラス城2F.json": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 511,
+                "y": 511
+            }
+        },
+        "mapシトラス城3F.json": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 512,
+                "y": 511.99999999999994
+            }
+        },
+        "mapシトラス城下町外装.json": {
+            "scale": 0.9724905303030302,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 640.6232046350844,
+                "y": 640.6232046350846
+            }
+        },
+        "mapシュタージ.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1023.5688421052632,
+                "y": 1024
+            }
+        },
+        "mapシュタージ2F.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1024,
+                "y": 1023.5
+            }
+        },
+        "mapドレイス城1F.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapドレイス城2F.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapドレイス城3F.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapドレイス城B1.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapドレイス城下町.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 959.7574736842106,
+                "y": 767.8922105263158
+            }
+        },
+        "mapナクリアル城1F.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapナクリアル城2F.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapナクリアル城下町.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "mapピクサル山道.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 2303.6666666666665
+            }
+        },
+        "mapピクサル洞窟1.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 959.7574736842106,
+                "y": 767.8922105263158
+            }
+        },
+        "mapピクサル洞窟2.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 959.7574736842106,
+                "y": 767.8922105263158
+            }
+        },
+        "mapピクサル洞窟3.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 959.7574736842106,
+                "y": 767.8922105263158
+            }
+        },
+        "mapピクサル洞窟A.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                7,
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 960,
+                "y": 1151.5
+            }
+        },
+        "mapブラス城1F.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "mapブラス城2F.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapブラス城3F.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapブラス城B1.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapペドロウム.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapポートムード.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "mapポートムード2F.json": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "expandedObjectLayers": [
+                6,
+                5,
+                7,
+                3
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "mapモングロ山上.json": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1294.5,
+                "y": 1055
+            }
+        },
+        "mapモングロ山頂.json": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 704,
+                "y": 639.6666666666665
+            }
+        },
+        "mapモングロ洞窟.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                7,
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 960,
+                "y": 1151.6666666666665
+            }
+        },
+        "mapラプリエール城1F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                5,
+                3,
+                4
+            ],
+            "scale": 1.0656575520833333,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.539572960259,
+                "y": 768.0703790817729
+            }
+        },
+        "mapラプリエール城2F.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.598486328125,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 512.3597153068393,
+                "y": 512.0469193878487
+            }
+        },
+        "mapラプリエール城3F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                5,
+                3,
+                4
+            ],
+            "scale": 1.598486328125,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 512.3597153068393,
+                "y": 512.0469193878487
+            }
+        },
+        "mapラプリエール城下町.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640,
+                "y": 639.6666666666665
+            }
+        },
+        "mapラプリエール東の家.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.75
+            }
+        },
+        "mapレイドス城.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                7,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "mapレゼ.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 1.3916015625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 640.2694736842105,
+                "y": 639.9101754385964
+            }
+        },
+        "map世界.json": {
+            "expandedObjectLayers": [
+                3,
+                2
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 4800,
+                "y": 4799.666666666666
+            }
+        },
+        "map停泊所.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map光の塔1F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                7,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map光の塔2F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map光の塔3F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map光の塔4F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map光の塔5F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                7,
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map北の洞窟B1.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 768.5
+            }
+        },
+        "map北の洞窟B2.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                5,
+                3,
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 768.5
+            }
+        },
+        "map南の遺跡B1.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map南の遺跡B2.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map南の遺跡B3.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map南の遺跡B4.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map南の遺跡B5.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map南の遺跡B6.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map古の神殿.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                5,
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "map大陸降り口.json": {
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 927.4206315789475,
+                "y": 1035.6412631578949
+            }
+        },
+        "map試練の洞窟B1.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768,
+                "y": 767.6666666666665
+            }
+        },
+        "map試練の洞窟B2.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map試練の洞窟B3.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map試練の洞窟B4.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map試練の洞窟B5.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                7,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map通行路地上.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                5,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 528.5995789473684,
+                "y": 767.8922105263158
+            }
+        },
+        "map通行路洞窟.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 528.5995789473684,
+                "y": 767.8922105263158
+            }
+        },
+        "map闇の洞窟B1.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768,
+                "y": 768.5
+            }
+        },
+        "map闇の洞窟B2.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map闇の洞窟B3.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.15966796875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.3233684210527,
+                "y": 767.8922105263158
+            }
+        },
+        "map魔女の塔1F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                7,
+                3,
+                4
+            ],
+            "scale": 1.0316406249999999,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768.678530859523,
+                "y": 768.1938659598638
+            }
+        },
+        "map魔女の塔2F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 768,
+                "y": 768.5
+            }
+        },
+        "map魔女の塔3F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.0316406249999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.678530859523,
+                "y": 768.1938659598638
+            }
+        },
+        "map魔女の塔4F.json": {
+            "expandedGroupLayers": [
+                4
+            ],
+            "expandedObjectLayers": [
+                6,
+                3,
+                4
+            ],
+            "scale": 1.0316406249999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 768.678530859523,
+                "y": 768.1938659598638
+            }
+        },
+        "map黒.json": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 16,
+                "y": 16.5
+            }
+        },
+        "piximap.json": {
+            "scale": 0.662625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1000.5659309564232,
+                "y": 1000.5659309564234
+            }
+        },
+        "secondmap.json": {
+            "scale": 0.99453125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 480.62843676355067,
+                "y": 479.62293794186957
+            }
+        },
+        "start.json": {
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 144,
+                "y": 79
+            }
+        },
+        "tfield2.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "シトラス城1F.json": {
+            "scale": 0.9446022727272726,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 509.7383458646616,
+                "y": 438.2796992481203
+            }
+        },
+        "シトラス城2F.json": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 528.5,
+                "y": 327
+            }
+        },
+        "シトラス城3F.json": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 511.5,
+                "y": 419
+            }
+        },
+        "ダンジョン下層.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "北の洞窟B1.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1177,
+                "y": 907
+            }
+        },
+        "城下層.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "姫の町.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 512,
+                "y": 512.5
+            }
+        }
+    },
+    "frame.defaultDuration": 200,
+    "last.imagePath": "D:/Programing/project/kaeru/game/assets/tilesets",
+    "last.objectTypesPath": "D:/Programing/project/kaeru/game/assets/tilesets/objecttypes.json",
+    "map.fixedSize": true,
+    "map.height": 1,
+    "map.lastUsedFormat": "json",
+    "map.orientation": 1,
+    "map.tileHeight": 32,
+    "map.tileWidth": 32,
+    "map.width": 1,
+    "openFiles": [
+        "mapラプリエール城3F.json",
+        "mapアルビエ.json",
+        "mapラプリエール城1F.json",
+        "mapラプリエール城下町.json",
+        "mapアルビエ2F.json",
+        "mapラプリエール城2F.json",
+        "姫の町.json",
+        "mapラプリエール東の家.json",
+        "map世界.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/町下層.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/共通上層.json",
+        "mapいやしの家2F.json",
+        "mapいやしの家.json",
+        "map北の洞窟B1.json",
+        "map北の洞窟B2.json",
+        "mapポートムード.json",
+        "mapポートムード2F.json",
+        "mapイルデリ港.json",
+        "map魔女の塔2F.json",
+        "map魔女の塔3F.json",
+        "map魔女の塔4F.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/世界.json",
+        "mapピクサル山道.json",
+        "mapTownParts.json",
+        "mapDungeonParts.json",
+        "mapブラス城2F.json",
+        "mapブラス城1F.json",
+        "mapブラス城3F.json",
+        "mapブラス城B1.json",
+        "mapモングロ山頂.json",
+        "mapモングロ洞窟.json",
+        "map停泊所.json",
+        "mapイリシア.json",
+        "mapイリシアB1.json",
+        "mapペドロウム.json",
+        "map南の遺跡B1.json",
+        "map南の遺跡B2.json",
+        "map南の遺跡B3.json",
+        "map南の遺跡B4.json",
+        "map南の遺跡B5.json",
+        "map南の遺跡B6.json",
+        "map古の神殿.json",
+        "mapシュタージ.json",
+        "map試練の洞窟B1.json",
+        "map試練の洞窟B2.json",
+        "map試練の洞窟B3.json",
+        "map試練の洞窟B5.json",
+        "map試練の洞窟B4.json",
+        "map光の塔1F.json",
+        "map光の塔2F.json",
+        "map光の塔3F.json",
+        "map光の塔4F.json",
+        "map光の塔5F.json",
+        "mapナクリアル城下町.json",
+        "mapナクリアル城1F.json",
+        "mapナクリアル城2F.json",
+        "map闇の洞窟B1.json",
+        "map闇の洞窟B2.json",
+        "map闇の洞窟B3.json",
+        "mapイトランド城2F.json",
+        "mapイトランド城B1.json",
+        "mapレゼ.json",
+        "map通行路地上.json",
+        "map通行路洞窟.json",
+        "mapピクサル洞窟A.json",
+        "mapピクサル洞窟1.json",
+        "mapピクサル洞窟2.json",
+        "mapピクサル洞窟3.json",
+        "mapドレイス城下町.json",
+        "mapドレイス城1F.json",
+        "mapドレイス城2F.json",
+        "mapドレイス城3F.json",
+        "mapドレイス城B1.json",
+        "mapレイドス城.json",
+        "mapWorldParts.json",
+        "mapうさぎ山道表.json",
+        "mapうさぎ山道裏.json",
+        "mapうさぎ洞窟下.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/ダンジョン下層.json",
+        "mapうさぎ洞窟上.json",
+        "mapうさぎ王国.json",
+        "mapうさぎ神への道1.json",
+        "mapうさぎ神への道2.json",
+        "mapうさぎ神への道3.json",
+        "mapうさぎ神への道4.json",
+        "mapうさぎ神への道5.json",
+        "mapうさぎ神への道6.json",
+        "mapうさぎ神への道7.json",
+        "map黒.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/町下層_u.json",
+        "mapイトランド城1F.json",
+        "mapシュタージ2F.json",
+        "map魔女の塔1F.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/ダンジョン下層_u.json"
+    ],
+    "project": "map.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "mapラプリエール城3F.json",
+        "mapアルビエ.json",
+        "mapラプリエール城1F.json",
+        "mapラプリエール城下町.json",
+        "mapアルビエ2F.json",
+        "mapラプリエール城2F.json",
+        "姫の町.json",
+        "mapラプリエール東の家.json",
+        "map世界.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/町下層.json",
+        "D:/Programing/project/kaeru/game/assets/tilesets/共通上層.json",
+        "mapいやしの家2F.json"
+    ],
+    "resizeMap.removeObjects": false,
+    "textEdit.monospace": true,
+    "tileset.embedInMap": false,
+    "tileset.lastUsedFormat": "json",
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 32,
+        "width": 32
+    },
+    "tileset.transparentColor": "#ff00ff",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": false
+}

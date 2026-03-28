@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":"2Fへ","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"王様","trigger":1,"imageId":6,"index":0,"direction":0,"lockType":1,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":2}]},
+{"id":3,"name":"大臣","trigger":1,"imageId":10,"index":4,"direction":0,"lockType":1,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":3}]},
+{"id":4,"name":"兵士","trigger":1,"imageId":15,"index":0,"direction":2,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":4}]},
+{"id":5,"name":"王様の部屋","trigger":1,"imageId":10,"index":5,"direction":0,"lockType":1,"moveRegionKey":"r2","moveType":1,"moveRouteId":1,"pages":[{"scriptId":5}]},
+{"id":6,"name":"王子の部屋","trigger":1,"imageId":10,"index":5,"direction":0,"lockType":1,"moveRegionKey":"r3","moveType":1,"moveRouteId":1,"pages":[{"scriptId":6}]},
+{"id":7,"name":"扉８","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":7,"partId":1}]},
+{"id":8,"name":"扉９","trigger":260,"inout":"in","partOrder":1,"pages":[{"scriptId":8,"partId":1}]},
+{"id":9,"name":"見張り","trigger":1,"imageId":15,"index":0,"direction":0,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":9}]}
+]
+}

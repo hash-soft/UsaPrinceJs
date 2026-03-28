@@ -1,0 +1,11 @@
+comment,,,,,,,,,,,,,,,,,,
+id,name,trigger,imageId,index,direction,lockType,moveRegionKey,moveType,moveRouteId,inout,partId,partOrder,layerIndex,*pages*,0.scriptId,0.commonScriptId,1.scriptId,*pages*
+null,,,,,,,,,,,,,,,,,,
+1,世界へ,0x08,,,,,,,,out,,,,[,1,,,]
+2,船員,0x01,9,4,0,1,,1,0,,,,,[,2,,,]
+3,船,0x08,18,0,2,0,,0,0,,,,,[,3,,,]
+4,宿屋,0x01,10,5,1,1,,0,0,,,,,[,4,,,]
+5,診療所,0x01,10,6,3,1,,0,0,,,,,[,5,,,]
+6,道具屋,0x01,26,0,3,1,,0,0,,,,,[,7,,,]
+7,兵士,0x01,25,0,0,1,,1,0,,,,,[,8,,,]
+8,セーブ,0x02,,,,,,,,in,,,,[,,15,,]

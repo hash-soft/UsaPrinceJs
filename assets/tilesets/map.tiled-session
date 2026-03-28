@@ -1,0 +1,123 @@
+{
+    "activeFile": "",
+    "automapping.whileDrawing": false,
+    "expandedProjectPaths": [
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets",
+        "."
+    ],
+    "exportAsImage.drawTileGrid": false,
+    "exportAsImage.includeBackgroundColor": false,
+    "exportAsImage.useCurrentScale": false,
+    "exportAsImage.visibleLayersOnly": true,
+    "file.lastUsedOpenFilter": "すべてのファイル (*)",
+    "fileStates": {
+        "": {
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/map/map世界.json": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 4093.939393939394,
+                "y": 4095.454545454545
+            }
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/map/secondmap.json": {
+            "scale": 0.99453125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 480.6284367635507,
+                "y": 480.1256873527101
+            }
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/map/start.json": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 800,
+                "y": 639.5
+            }
+        },
+        "C:/Users/asasi/Documents/programing/project/kaeru/game/assets/map/姫の町.json": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 511.99999999999994,
+                "y": 511.6666666666667
+            }
+        },
+        "C:/Users/asasi/Downloads/examples/desert.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Downloads/examples/hexagonal-mini.tmx#hex mini": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Downloads/examples/orthogonal-outside.tmx#outdoor": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Downloads/examples/perspective_walls.tmx#sewer_tileset": {
+            "scaleInDock": 1
+        },
+        "C:/Users/asasi/Downloads/examples/perspective_walls.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/asasi/Downloads/examples/sewers.tmx#sewer_tileset": {
+            "scaleInDock": 1
+        },
+        "タイルセット_世界.json": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 165.33333333333331,
+                "y": 304.3333333333333
+            }
+        },
+        "タイルテスト.json": {
+            "scale": 1.0147727272727272,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 533.1243001119822,
+                "y": 174.91601343784998
+            }
+        },
+        "タイルテスト.json#オートタイル": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "frame.defaultDuration": 200,
+    "map.fixedSize": true,
+    "map.height": 32,
+    "map.orientation": 1,
+    "map.tileHeight": 32,
+    "map.tileWidth": 32,
+    "map.width": 32,
+    "openFiles": [
+        "タイルテスト.json"
+    ],
+    "project": "map.tiled-project",
+    "property.type": "object",
+    "recentFiles": [
+        "タイルテスト.json",
+        "C:/Users/asasi/Downloads/examples/orthogonal-outside.tmx",
+        "C:/Users/asasi/Downloads/examples/perspective_walls.tmx",
+        "C:/Users/asasi/Downloads/examples/hexagonal-mini.tmx",
+        "C:/Users/asasi/Downloads/examples/desert.tsx",
+        "C:/Users/asasi/Downloads/examples/desert.tmx",
+        "C:/Users/asasi/Downloads/examples/perspective_walls.tsx",
+        "C:/Users/asasi/Downloads/examples/sewers.tmx"
+    ],
+    "resizeMap.removeObjects": true,
+    "tileset.embedInMap": true,
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.tileSize": {
+        "height": 32,
+        "width": 32
+    },
+    "tileset.transparentColor": "#ff00ff",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": false
+}

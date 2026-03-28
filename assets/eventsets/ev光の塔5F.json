@@ -1,0 +1,14 @@
+{
+"objects":[
+null,
+{"id":1,"name":4,"trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"台座","trigger":2,"inout":"in","layerIndex":1,"pages":[{"scriptId":7,"partId":57},{"scriptId":2,"trigger":2050}]},
+{"id":3,"name":"灯ろう１","trigger":0,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":3,"partId":56}]},
+{"id":4,"name":"灯ろう２","trigger":0,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":3,"partId":56}]},
+{"id":5,"name":"灯ろう３","trigger":0,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":3,"partId":56}]},
+{"id":6,"name":"灯ろう４","trigger":0,"inout":"in","partOrder":1,"layerIndex":1,"pages":[{"scriptId":3,"partId":56}]},
+{"id":7,"name":"宝５７","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":4}]},
+{"id":8,"name":"落下","trigger":8,"inout":"in","pages":[{"scriptId":5}]},
+{"id":9,"name":"人","trigger":1,"imageId":47,"index":0,"direction":0,"lockType":1,"moveRegionKey":"r1","moveType":1,"moveRouteId":0,"pages":[{"scriptId":6}]}
+]
+}

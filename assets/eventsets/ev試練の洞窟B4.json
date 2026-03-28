@@ -1,0 +1,12 @@
+{
+"objects":[
+null,
+{"id":1,"name":"B3","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"B5","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"B5_落とし穴","trigger":8,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"立札","trigger":2,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"宝４８","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":5}]},
+{"id":6,"name":"宝４９","trigger":2,"inout":"in","layerIndex":1,"pages":[{"commonScriptId":88,"partId":54},{"scriptId":6}]},
+{"id":7,"name":"立札","trigger":2,"inout":"in","pages":[{"scriptId":7}]}
+]
+}

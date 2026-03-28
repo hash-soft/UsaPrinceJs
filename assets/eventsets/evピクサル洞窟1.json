@@ -1,0 +1,10 @@
+{
+"objects":[
+null,
+{"id":1,"name":"出口１","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"出口２","trigger":8,"inout":"in","pages":[{"scriptId":2}]},
+{"id":3,"name":"2_1","trigger":8,"inout":"in","pages":[{"scriptId":3}]},
+{"id":4,"name":"2_2","trigger":8,"inout":"in","pages":[{"scriptId":4}]},
+{"id":5,"name":"2_穴","trigger":8,"inout":"in","pages":[{"scriptId":5}]}
+]
+}

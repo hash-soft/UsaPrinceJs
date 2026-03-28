@@ -1,0 +1,6 @@
+comment,名前,エンカウントId,地形タイプ
+id,,encounterId,terrainType
+null,,,
+1,入口,27,0
+2,中間,28,0
+3,山頂付近,29,0

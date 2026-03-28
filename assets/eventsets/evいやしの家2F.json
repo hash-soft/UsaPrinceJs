@@ -1,0 +1,7 @@
+{
+"objects":[
+null,
+{"id":1,"name":"1Fへ","trigger":8,"inout":"in","pages":[{"scriptId":1}]},
+{"id":2,"name":"住人","trigger":1,"imageId":10,"index":6,"direction":1,"lockType":2,"moveType":0,"moveRouteId":0,"pages":[{"scriptId":2},{"scriptId":3}]}
+]
+}

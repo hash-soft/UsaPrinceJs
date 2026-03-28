@@ -1,0 +1,7 @@
+comment,,繰り返すか,移動できない場合とばすか,移動頻度,動作リスト,,,,,,,,,,,,,,,
+id,,repeat,skippable,moveFrequency,*list*,0.code,0.parameters,1.code,1.parameters,2.code,2.parameters,3.code,3.parameters,4.code,4.parameters,5.code,5.parameters,6.code,6.parameters,*list*
+null,,,,,,,,,,,,,,,,,,,,
+1,ジャンプ長い,false,true,0,[,20,*[0;0;16;0;0]*,20,*[0;105;0;26;0]*,,,,,,,,,,,]
+2,ジャンプ短い,false,true,0,[,20,*[0;0;16;0;0]*,20,*[0;44;0;26;0]*,,,,,,,,,,,]
+3,落下上,false,true,0,[,20,*[0;18;0;26;0]*,,,,,,,,,,,,,]
+4,落下下,false,true,0,[,20,*[0;49;0;26;0]*,,,,,,,,,,,,,]
