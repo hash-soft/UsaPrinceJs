@@ -1,6 +1,8 @@
 import { PlayOptions, Sound, IMediaInstance } from '@pixi/sound';
 import Utils from './Utils';
+import { sound } from '@pixi/sound';
 
+sound.disableAutoPause = true;
 interface BgmOptions extends PlayOptions {
   endInterruptFn?: (sound: Sound) => void;
 }
@@ -50,7 +52,7 @@ export class AudioManager {
     start?: number,
     end?: number,
     loop?: boolean,
-    store = false
+    store = false,
   ) {
     // 同じbgm作成済み
     if (this._bgmCreated(name)) {
@@ -105,7 +107,7 @@ export class AudioManager {
       // 失敗時
       () => {
         Utils.pushError(new Error(url));
-      }
+      },
     );
 
     this._pushBgm(sound, loop, start, end);
@@ -119,7 +121,7 @@ export class AudioManager {
    */
   private static _checkPlayableSound(
     bgm: Bgm | undefined,
-    sound: Sound | undefined
+    sound: Sound | undefined,
   ) {
     if (bgm?.sound !== sound) {
       this._destroyReleaseBgm();
@@ -160,7 +162,7 @@ export class AudioManager {
       // 失敗時
       () => {
         Utils.pushError(new Error(url));
-      }
+      },
     );
     this._preloadBgm = { sound, options: {} };
   }
@@ -180,7 +182,7 @@ export class AudioManager {
     start: number,
     end: number,
     endFn?: () => void,
-    endNoResume = false
+    endNoResume = false,
   ) {
     const url = this._getBgmUrl(name);
     const endInterruptFn = this._getEndInterruptFn(endFn, endNoResume);
@@ -197,7 +199,7 @@ export class AudioManager {
       },
       () => {
         Utils.pushError(new Error(url));
-      }
+      },
     );
     // bgmが再生中なら一時停止
     this.pauseBgm();
@@ -246,7 +248,7 @@ export class AudioManager {
         options.loop,
         options.start,
         options.end,
-        options.endInterruptFn
+        options.endInterruptFn,
       );
     }
   }
@@ -299,7 +301,7 @@ export class AudioManager {
     loop?: boolean,
     start?: number,
     end?: number,
-    endInterruptFn?: (sound: Sound) => void
+    endInterruptFn?: (sound: Sound) => void,
   ) {
     const options = { loop, start, end, endInterruptFn };
     this._bgmStack.push({ sound, options });
@@ -331,7 +333,7 @@ export class AudioManager {
     loop?: boolean,
     start?: number,
     end?: number,
-    endFn?: (sound: Sound) => void
+    endFn?: (sound: Sound) => void,
   ) {
     this._destroyReleaseBgm();
     if (!bgm) {
@@ -525,7 +527,7 @@ export class AudioManager {
         },
         () => {
           Utils.pushError(new Error(url));
-        }
+        },
       );
       this._ses.set(name, newSound);
     }
@@ -628,7 +630,7 @@ export class AudioManager {
   private static _load(
     url: string,
     fn?: (sound: Sound | undefined) => void,
-    errorfn?
+    errorfn?,
   ) {
     const sound = Sound.from({
       url: url,
@@ -658,7 +660,7 @@ export class AudioManager {
     loop?: boolean,
     start?: number,
     end?: number,
-    endFn?: (sound: Sound) => void
+    endFn?: (sound: Sound) => void,
   ) {
     if (!sound?.isPlayable) {
       return;

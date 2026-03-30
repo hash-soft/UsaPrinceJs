@@ -1939,7 +1939,7 @@ export class GameUtils {
    * @returns
    */
   private static _runningElectron() {
-    return typeof window.file === 'object';
+    return Utils.runningElectron();
   }
 
   /**

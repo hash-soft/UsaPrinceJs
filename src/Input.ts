@@ -32,6 +32,7 @@ class Keyboard {
    * 押されているキーの保存
    */
   private static _pressedKeys: boolean[] = [];
+  private static _releasedKeys: boolean[] = [];
   /**
    * キーコードと操作インデックスをセットにしたキーマッピング
    */
@@ -132,9 +133,10 @@ class Keyboard {
     this.clear();
     const newMapping = mapping ?? this._defaultMapping;
     this._mappingSets = newMapping.flatMap((row, index) =>
-      row.map((code) => [code, index] as [string, number])
+      row.map((code) => [code, index] as [string, number]),
     );
     this._pressedKeys = Array(this._mappingSets.length).fill(false);
+    this._releasedKeys = Array(this._mappingSets.length).fill(false);
     this._setDebugIndex();
   }
 
@@ -148,7 +150,7 @@ class Keyboard {
     this._talismanIndex = -1;
     this._encounterIndex = -1;
     const close = this._mappingSets.findIndex(
-      (set) => set[1] === EInputOperation.Close
+      (set) => set[1] === EInputOperation.Close,
     );
     if (close >= 0) {
       this._talismanIndex = close;
@@ -158,7 +160,7 @@ class Keyboard {
       }
     }
     const allClose = this._mappingSets.findIndex(
-      (set) => set[1] === EInputOperation.AllClose
+      (set) => set[1] === EInputOperation.AllClose,
     );
     if (allClose >= 0) {
       this._debugIndex = allClose;
@@ -186,6 +188,7 @@ class Keyboard {
     }
     // 状態を保存する
     this._pressedKeys[index] = true;
+    this._releasedKeys[index] = false;
   }
 
   /**
@@ -200,7 +203,8 @@ class Keyboard {
       return;
     }
     // 状態を保存する
-    this._pressedKeys[index] = false;
+    //this._pressedKeys[index] = false;
+    this._releasedKeys[index] = true;
   }
 
   /**
@@ -219,7 +223,7 @@ class Keyboard {
    */
   static filterIndexOperation(operation: EInputOperation) {
     return this._mappingSets.flatMap((set, index) =>
-      set[1] === operation ? index : []
+      set[1] === operation ? index : [],
     );
   }
 
@@ -228,6 +232,16 @@ class Keyboard {
    */
   static clear() {
     this._pressedKeys.fill(false);
+    this._releasedKeys.fill(false);
+  }
+
+  static releaseKeyPressed() {
+    for (let i = 0; i < this._pressedKeys.length; i++) {
+      if (this._releasedKeys[i]) {
+        this._pressedKeys[i] = false;
+        this._releasedKeys[i] = false;
+      }
+    }
   }
 }
 
@@ -341,12 +355,12 @@ class GController {
         const tempNum = parseInt(code);
         const num = isNaN(tempNum) ? -1 : tempNum - 1;
         return [num, index] as [number, number];
-      })
+      }),
     );
     // アナログキーを最後尾に追加する
     this._startAnalogIndex = this._mappingSets.length;
     this._mappingSets.push(
-      ...this._analogMapping.map((code) => [-1, code] as [number, number])
+      ...this._analogMapping.map((code) => [-1, code] as [number, number]),
     );
     this._setDebugIndex();
   }
@@ -361,7 +375,7 @@ class GController {
     this._talismanIndex = -1;
     this._encounterIndex = -1;
     const close = this._mappingSets.findIndex(
-      (set) => set[1] === EInputOperation.Close
+      (set) => set[1] === EInputOperation.Close,
     );
     if (close >= 0) {
       this._talismanIndex = close;
@@ -371,7 +385,7 @@ class GController {
       }
     }
     const allClose = this._mappingSets.findIndex(
-      (set) => set[1] === EInputOperation.AllClose
+      (set) => set[1] === EInputOperation.AllClose,
     );
     if (allClose >= 0) {
       this._debugIndex = allClose;
@@ -402,7 +416,7 @@ class GController {
     }
     // １つに統合
     const initialKeys: boolean[] = new Array(this._mappingSets.length).fill(
-      false
+      false,
     );
     const pressedKeys = pressedKeysList.reduce((prev, current) => {
       current.forEach((pressed, index) => {
@@ -474,7 +488,7 @@ class GController {
    */
   static filterIndexOperation(operation: EInputOperation) {
     return this._mappingSets.flatMap((set, index) =>
-      set[1] === operation ? index : []
+      set[1] === operation ? index : [],
     );
   }
 }
@@ -775,6 +789,7 @@ export class Input {
       ...GController.getPressedGamepads(),
     ];
     this._checkTriggerInput();
+    Keyboard.releaseKeyPressed();
   }
 
   /**

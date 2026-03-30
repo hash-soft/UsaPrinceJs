@@ -13,6 +13,7 @@ import {
 import { Input } from './Input';
 import { ELogLevel, GameLog } from './GameLog';
 import { ErrorManager } from './ErrorManager';
+import Utils from './Utils';
 
 /**
  * メインウィンドウオブジェクト
@@ -53,36 +54,41 @@ mainWindow.init = async function () {
   // PIXIのビューを最初に作っておく
   await Graphics.initialize(EResolve.Width, EResolve.Height);
   this.viewFit();
-  this.makeFPSMeter();
+  if (!Utils.runningAndroid() || checkTestPlay()) {
+    this.makeFPSMeter();
+  }
   this.makeDebugHtml();
   const logDefault = checkTestPlay() ? ELogLevel.Debug : ELogLevel.Error;
   // 初期設定はdebugかどうかで決定
   setSaveDataCompress(!checkTestPlay());
   let inputSetOK = false;
   let logSetOK = false;
-  try {
-    const settingsText = await window.file.readTextFile(usaConfigName);
-    if (settingsText) {
-      const settings: UsaConfig = JSON.parse(settingsText);
-      const logLevel = settings.logLevel ?? logDefault;
-      GameLog.initialize(logLevel);
-      Input.initialize(settings);
-      // compressフラグが設定されている場合は強制設定
-      if (settings.compress !== undefined) {
-        setSaveDataCompress(settings.compress);
+  if (Utils.runningElectron()) {
+    try {
+      const settingsText = await window.file.readTextFile(usaConfigName);
+      if (settingsText) {
+        const settings: UsaConfig = JSON.parse(settingsText);
+        const logLevel = settings.logLevel ?? logDefault;
+        GameLog.initialize(logLevel);
+        Input.initialize(settings);
+        // compressフラグが設定されている場合は強制設定
+        if (settings.compress !== undefined) {
+          setSaveDataCompress(settings.compress);
+        }
+        // スクリーンショット名が設定されている場合強制設定
+        if (settings.screenshot) {
+          const screenshot = settings.screenshot;
+          mainWindow.screenshot.path =
+            screenshot.path ?? defaultScreenshot.path;
+          mainWindow.screenshot.format =
+            screenshot.format ?? defaultScreenshot.format;
+        }
+        inputSetOK = true;
+        logSetOK = true;
       }
-      // スクリーンショット名が設定されている場合強制設定
-      if (settings.screenshot) {
-        const screenshot = settings.screenshot;
-        mainWindow.screenshot.path = screenshot.path ?? defaultScreenshot.path;
-        mainWindow.screenshot.format =
-          screenshot.format ?? defaultScreenshot.format;
-      }
-      inputSetOK = true;
-      logSetOK = true;
+    } catch (e) {
+      GameLog.error(e);
     }
-  } catch (e) {
-    GameLog.error(e);
   }
   if (!inputSetOK) {
     Input.initialize();
@@ -90,15 +96,18 @@ mainWindow.init = async function () {
   if (!logSetOK) {
     GameLog.initialize(logDefault);
   }
-  while (!window.top?.document.hasFocus()) {
-    GameLog.log('waiting...');
-    await this.sleep(100);
+  // Androidの場合フォーカスはネイティブ側で管理するため、ここでは管理しない
+  if (!Utils.runningAndroid()) {
+    while (!window.top?.document.hasFocus()) {
+      GameLog.log('waiting...');
+      await this.sleep(100);
+    }
+    window.addEventListener('blur', mainWindow.blur.bind(mainWindow));
+    window.addEventListener('focus', mainWindow.focus.bind(mainWindow));
+    window.addEventListener('keyup', mainWindow.keyup.bind(mainWindow));
   }
 
   window.addEventListener('resize', mainWindow.viewFit.bind(mainWindow));
-  window.addEventListener('blur', mainWindow.blur.bind(mainWindow));
-  window.addEventListener('focus', mainWindow.focus.bind(mainWindow));
-  window.addEventListener('keyup', mainWindow.keyup.bind(mainWindow));
 };
 
 /**
@@ -165,7 +174,7 @@ mainWindow.makeDebugHtml = function () {
                 <button id="ok" class="decide">OK</button>
                 <button id="cancel" class="decide">キャンセル</button>
               </div>
-            </div>`
+            </div>`,
     );
   }
 };
@@ -209,6 +218,9 @@ mainWindow.focus = function () {
  * @param event - キーボードイベントオブジェクト
  */
 mainWindow.keyup = function (event: KeyboardEvent) {
+  if (Utils.runningAndroid()) {
+    return;
+  }
   if (event.ctrlKey && event.altKey) {
     return;
   }
@@ -258,7 +270,7 @@ mainWindow.start = function () {
  * ゲームループ
  */
 mainWindow.gameLoop = function (deltaTime: number) {
-  this.meter.tickStart();
+  this.meter?.tickStart();
 
   const calcFrameNumber = () => {
     this.elapsedTime += deltaTime;
@@ -277,13 +289,13 @@ mainWindow.gameLoop = function (deltaTime: number) {
   }
   Graphics.render();
 
-  if (loop !== 1) {
+  if (loop !== 1 && !Utils.runningAndroid()) {
     GameLog.log(
-      `count: ${loop}, elapsed: ${this.elapsedTime}, delta: ${deltaTime}`
+      `count: ${loop}, elapsed: ${this.elapsedTime}, delta: ${deltaTime}`,
     );
   }
 
-  this.meter.tick();
+  this.meter?.tick();
 };
 
 /**
@@ -296,7 +308,7 @@ mainWindow.stopGame = function () {
   Graphics.stopTicker();
   AudioManager.allPause();
   if (this.meterVisible) {
-    this.meter?.pause();
+    this.meter.pause();
   }
 };
 
@@ -305,6 +317,9 @@ mainWindow.stopGame = function () {
  * @returns {Promise<void>}
  */
 mainWindow.takeScreenshot = function () {
+  if (!Utils.runningElectron()) {
+    return;
+  }
   Graphics.getSnapshotUrl().then((url) => {
     const now = new Date();
     const year = now.getFullYear();
@@ -316,11 +331,11 @@ mainWindow.takeScreenshot = function () {
     const nowStr = `${year}${month}${date}${hours}${minutes}${seconds}`;
     const filename = `${this.screenshot.path}/${this.screenshot.format.replace(
       '[d]',
-      nowStr
+      nowStr,
     )}`;
     window.file.writeBase64File(
       filename,
-      url.replace(/^data:image\/png;base64,/, '')
+      url.replace(/^data:image\/png;base64,/, ''),
     );
   });
 };
@@ -338,17 +353,33 @@ mainWindow.onUnHandlerRejection = function (e: PromiseRejectionEvent) {
 window.addEventListener('error', mainWindow.onError.bind(mainWindow));
 window.addEventListener(
   'unhandledrejection',
-  mainWindow.onUnHandlerRejection.bind(mainWindow)
+  mainWindow.onUnHandlerRejection.bind(mainWindow),
 );
 window.addEventListener('load', mainWindow.onLoad.bind(mainWindow));
 
-window.file.onResetConfig((data: string) => {
-  try {
-    const settings: UsaConfig = JSON.parse(data);
-    Input.reset(settings);
-  } catch (e) {
-    GameLog.error(e);
-  }
-  window.file.endResetConfig();
-  return true;
-});
+if (Utils.runningElectron()) {
+  window.file.onResetConfig((data: string) => {
+    try {
+      const settings: UsaConfig = JSON.parse(data);
+      Input.reset(settings);
+    } catch (e) {
+      GameLog.error(e);
+    }
+    window.file.endResetConfig();
+    return true;
+  });
+}
+
+if (Utils.runningAndroid()) {
+  mainWindow.sendKeyEvent = function (key: string, type: string) {
+    console.log(`sendKeyEvent: ${key}, ${type}`);
+    const event = new KeyboardEvent(type, {
+      key: key,
+      code: key,
+      bubbles: true,
+      cancelable: true,
+    });
+    document.dispatchEvent(event);
+  };
+  window['mainWindow'] = mainWindow;
+}

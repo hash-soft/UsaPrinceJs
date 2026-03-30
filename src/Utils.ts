@@ -46,6 +46,18 @@ export default class Utils {
    */
   private static Errors = new Array<Error>();
 
+  /**
+   * electron上で実行しているか
+   * @returns
+   */
+  static runningElectron() {
+    return typeof window.file === 'object';
+  }
+
+  static runningAndroid() {
+    return typeof window.android === 'object';
+  }
+
   //---------------------------------------------
   // 中断データ
 
@@ -173,7 +185,7 @@ export default class Utils {
   static findArrayIndexRound<T>(
     array: T[],
     callBackFn: () => boolean,
-    fromIndex: number
+    fromIndex: number,
   ) {
     const array1 = array.slice(fromIndex);
     const find1 = array1.findIndex(callBackFn);
@@ -203,7 +215,7 @@ export default class Utils {
     performance.measure(
       'UtilsPerformance',
       'UtilsPerformanceStart',
-      'UtilsPerformanceStop'
+      'UtilsPerformanceStop',
     );
     const entries = performance.getEntriesByName('UtilsPerformance');
     console.log(`measure: ${entries[0].duration}`);
@@ -518,7 +530,7 @@ export default class Utils {
   static async compress(text: string) {
     const targetStream = new Blob([text]).stream();
     const compressedStream = targetStream.pipeThrough(
-      new CompressionStream('deflate')
+      new CompressionStream('deflate'),
     );
     const result = await new Response(compressedStream).arrayBuffer();
 
@@ -527,7 +539,7 @@ export default class Utils {
     let binaryString = '';
     for (let i = 0; i < uint8Array.length; i += chunkSize) {
       binaryString += String.fromCharCode(
-        ...uint8Array.subarray(i, i + chunkSize)
+        ...uint8Array.subarray(i, i + chunkSize),
       );
     }
     return binaryString;
@@ -541,12 +553,12 @@ export default class Utils {
    */
   static async decompress(text: string) {
     const charCodes: number[] = [].map.call(text, (c: string) =>
-      c.charCodeAt(0)
+      c.charCodeAt(0),
     ) as number[];
     const data = new Uint8Array(charCodes).buffer;
     const targetStream = new Blob([data]).stream();
     const decompressedStream = targetStream.pipeThrough(
-      new DecompressionStream('deflate')
+      new DecompressionStream('deflate'),
     );
     const result = await new Response(decompressedStream).text();
     return result;

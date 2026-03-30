@@ -13,6 +13,11 @@ interface File {
   specialKeyDown(key: string): Promise<void>;
 }
 
+interface Android {
+  sendMessage(msg: string);
+}
+
 interface Window {
   file: File;
+  android: Android;
 }
