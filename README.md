@@ -32,26 +32,21 @@ nodeをインストール LTS版を指定
 mise use -g node@lts
 ```
 
-このままでは npm と node が使えないためPowershellを設定する  
-ここからはPowershell上で行う
+このままでは npm と node が使えないためshimsへのパスを通す
+
+ユーザーパスが分からなければコマンドプロンプトの次コマンドで確認
 
 ```
-$profile
+echo %userprofile%
 ```
-出力されたパスのファイルに次を追加  
-なければ作成する
+
+ユーザー環境変数に次を設定
 
 ```
-(&mise activate pwsh) | Out-String | Invoke-Expression
+[ユーザーパス]\AppData\Local\mise\shims
 ```
-再度Powershellを起動しスクリプトが実行されていれば npm と node が使用できるようになるが  
-スクリプト実行権限がなければエラーとなるので次を行う  
-  
-管理者権限でPowershellを起動
-```
-PowerShell Set-ExecutionPolicy RemoteSigned
-```
-この後Powershellを起動したら npm と node が使えるようになっているはず
+
+この後ターミナルを新たに起動したら npm と node が使えるようになっているはず
 
 # ワークスペース構成
 
