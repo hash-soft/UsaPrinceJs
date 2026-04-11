@@ -96,18 +96,17 @@ mainWindow.init = async function () {
   if (!logSetOK) {
     GameLog.initialize(logDefault);
   }
-  // Androidの場合フォーカスはネイティブ側で管理するため、ここでは管理しない
+  while (!window.top?.document.hasFocus()) {
+    GameLog.log('waiting...');
+    await this.sleep(100);
+  }
+  window.addEventListener('blur', mainWindow.blur.bind(mainWindow));
+  window.addEventListener('focus', mainWindow.focus.bind(mainWindow));
+  window.addEventListener('resize', mainWindow.viewFit.bind(mainWindow));
+  // Androidの場合ファンクションキーで動作する機能はないのでキーイベントは登録しない
   if (!Utils.runningAndroid()) {
-    while (!window.top?.document.hasFocus()) {
-      GameLog.log('waiting...');
-      await this.sleep(100);
-    }
-    window.addEventListener('blur', mainWindow.blur.bind(mainWindow));
-    window.addEventListener('focus', mainWindow.focus.bind(mainWindow));
     window.addEventListener('keyup', mainWindow.keyup.bind(mainWindow));
   }
-
-  window.addEventListener('resize', mainWindow.viewFit.bind(mainWindow));
 };
 
 /**
@@ -123,13 +122,27 @@ mainWindow.sleep = function (ms: number) {
  * FPSメーター作成
  */
 mainWindow.makeFPSMeter = function () {
-  const meterOptions = {
-    show: 'ms',
-    theme: 'colorful',
-    decimals: 2,
-    heat: 1,
-    graph: 1,
-  };
+  // Androidは画面の重なりが大きいのでゲーム画面が見えなくならない程度にする
+  const meterOptions = Utils.runningAndroid()
+    ? {
+        show: 'ms',
+        theme: 'transparent',
+        background: 'transparent',
+        border: 'none',
+        boxShadow: 'none',
+        decimals: 2,
+        heat: 1,
+        graph: 1,
+        opacity: 0.5,
+      }
+    : {
+        show: 'ms',
+        theme: 'dark',
+        background: 'transparent',
+        decimals: 2,
+        heat: 1,
+        graph: 1,
+      };
   this.meter = new FPSMeter(undefined, meterOptions);
   this.meterVisible = checkTestPlay();
   if (!this.meterVisible) {
@@ -368,18 +381,4 @@ if (Utils.runningElectron()) {
     window.file.endResetConfig();
     return true;
   });
-}
-
-if (Utils.runningAndroid()) {
-  mainWindow.sendKeyEvent = function (key: string, type: string) {
-    console.log(`sendKeyEvent: ${key}, ${type}`);
-    const event = new KeyboardEvent(type, {
-      key: key,
-      code: key,
-      bubbles: true,
-      cancelable: true,
-    });
-    document.dispatchEvent(event);
-  };
-  window['mainWindow'] = mainWindow;
 }

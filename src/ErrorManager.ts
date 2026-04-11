@@ -1,4 +1,5 @@
 import { GameLog } from './GameLog';
+import Utils from './Utils';
 
 /**
  * エラー管理
@@ -74,6 +75,10 @@ export class ErrorManager {
    * 終了処理
    */
   private static _close() {
-    window.close();
+    if (Utils.runningAndroid()) {
+      window.android.sendMessage('close');
+    } else {
+      window.close();
+    }
   }
 }
