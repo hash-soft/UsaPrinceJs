@@ -40,6 +40,8 @@ mainWindow.viewFit = function () {
 
   style.width = EResolve.Width * rate + 'px';
   style.height = EResolve.Height * rate + 'px';
+
+  GameLog.debug(`view fit: ${style.width} x ${style.height}`);
 };
 
 mainWindow.onLoad = function () {
@@ -63,33 +65,33 @@ mainWindow.init = async function () {
   setSaveDataCompress(!checkTestPlay());
   let inputSetOK = false;
   let logSetOK = false;
-  if (Utils.runningElectron()) {
-    try {
-      const settingsText = await window.file.readTextFile(usaConfigName);
-      if (settingsText) {
-        const settings: UsaConfig = JSON.parse(settingsText);
-        const logLevel = settings.logLevel ?? logDefault;
-        GameLog.initialize(logLevel);
-        Input.initialize(settings);
-        // compressフラグが設定されている場合は強制設定
-        if (settings.compress !== undefined) {
-          setSaveDataCompress(settings.compress);
-        }
-        // スクリーンショット名が設定されている場合強制設定
-        if (settings.screenshot) {
-          const screenshot = settings.screenshot;
-          mainWindow.screenshot.path =
-            screenshot.path ?? defaultScreenshot.path;
-          mainWindow.screenshot.format =
-            screenshot.format ?? defaultScreenshot.format;
-        }
-        inputSetOK = true;
-        logSetOK = true;
+  try {
+    const settingsText = Utils.runningAndroid()
+      ? window.android.readSettings()
+      : await window.file.readTextFile(usaConfigName);
+    if (settingsText) {
+      const settings: UsaConfig = JSON.parse(settingsText);
+      const logLevel = settings.logLevel ?? logDefault;
+      GameLog.initialize(logLevel);
+      Input.initialize(settings);
+      // compressフラグが設定されている場合は強制設定
+      if (settings.compress !== undefined) {
+        setSaveDataCompress(settings.compress);
       }
-    } catch (e) {
-      GameLog.error(e);
+      // スクリーンショット名が設定されている場合強制設定
+      if (settings.screenshot) {
+        const screenshot = settings.screenshot;
+        mainWindow.screenshot.path = screenshot.path ?? defaultScreenshot.path;
+        mainWindow.screenshot.format =
+          screenshot.format ?? defaultScreenshot.format;
+      }
+      inputSetOK = true;
+      logSetOK = true;
     }
+  } catch (e) {
+    GameLog.error(e);
   }
+
   if (!inputSetOK) {
     Input.initialize();
   }
@@ -125,7 +127,7 @@ mainWindow.makeFPSMeter = function () {
   // Androidは画面の重なりが大きいのでゲーム画面が見えなくならない程度にする
   const meterOptions = Utils.runningAndroid()
     ? {
-        show: 'ms',
+        show: 'fps',
         theme: 'transparent',
         background: 'transparent',
         border: 'none',
@@ -137,8 +139,7 @@ mainWindow.makeFPSMeter = function () {
       }
     : {
         show: 'ms',
-        theme: 'dark',
-        background: 'transparent',
+        theme: 'colorful',
         decimals: 2,
         heat: 1,
         graph: 1,
@@ -277,6 +278,7 @@ mainWindow.start = function () {
   Graphics.setTickerListener(this.gameLoop, this);
   Graphics.startTicker();
   this.active = true;
+  GameLog.log('Ready ok!');
 };
 
 /**
@@ -353,11 +355,19 @@ mainWindow.takeScreenshot = function () {
   });
 };
 
+/**
+ * onErrorイベントハンドラー
+ * @param e エラー
+ */
 mainWindow.onError = function (e: ErrorEvent) {
   ErrorManager.showErrorScreen('エラー', e.error);
   this.stopGame();
 };
 
+/**
+ * onUnHandlerRejectionイベントハンドラー
+ * @param e エラー
+ */
 mainWindow.onUnHandlerRejection = function (e: PromiseRejectionEvent) {
   ErrorManager.showErrorScreen('エラー', e.reason.message);
   this.stopGame();
@@ -371,6 +381,9 @@ window.addEventListener(
 window.addEventListener('load', mainWindow.onLoad.bind(mainWindow));
 
 if (Utils.runningElectron()) {
+  /**
+   * 入力の再設定時に呼び出される
+   */
   window.file.onResetConfig((data: string) => {
     try {
       const settings: UsaConfig = JSON.parse(data);
@@ -381,4 +394,38 @@ if (Utils.runningElectron()) {
     window.file.endResetConfig();
     return true;
   });
+}
+
+if (Utils.runningAndroid()) {
+  /**
+   * 設定を適用する
+   * @param data json形式の設定データ
+   */
+  window.android.applySettings = function (data: string) {
+    try {
+      const settings: UsaConfig = JSON.parse(data);
+      Input.reset(settings);
+    } catch (e) {
+      GameLog.error(e);
+    }
+  };
+
+  /**
+   * Androidの設定画面に入るときに呼び出す
+   * WebViewのフォーカスを当てたままゲームを停止する
+   * ゲームパッド設定対策
+   * Android側ではフォーカスが外れたり復帰したときに通常はWebViewのフォーカスを
+   * 変えているが設定画面表示中は何もしないようにする
+   */
+  window.android.startSettings = function () {
+    mainWindow.blur();
+  };
+
+  /**
+   * Androidの設定画面が終わるときに呼び出す
+   * startSettingsの対処理
+   */
+  window.android.endSettings = function () {
+    mainWindow.focus();
+  };
 }

@@ -1,3 +1,5 @@
+import Utils from './Utils';
+
 export const enum EInputOperation {
   Menu,
   Close,
@@ -276,16 +278,18 @@ class GController {
   /**
    * デフォルトのキーマップ
    */
-  private static readonly _defaultMapping: string[][] = [
-    ['2', '7'],
-    ['3', '5'], // 0:すり抜け＋エンカウントなし 1:すり抜け
-    ['1', '8'],
-    ['4', '9'], // 0:デバッグ 1:エンカウント
-    ['13'],
-    ['14'],
-    ['15'],
-    ['16'],
-  ];
+  private static readonly _defaultMapping: string[][] = Utils.runningAndroid()
+    ? [['2'], ['3'], ['1'], ['4'], ['13'], ['14'], ['15'], ['16']]
+    : [
+        ['2', '7'],
+        ['3', '5'], // 0:すり抜け＋エンカウントなし 1:すり抜け
+        ['1', '8'],
+        ['4', '9'], // 0:デバッグ 1:エンカウント
+        ['13'],
+        ['14'],
+        ['15'],
+        ['16'],
+      ];
   /**
    * アナログキーのマッピング
    */
@@ -686,9 +690,11 @@ export class Input {
   static isTriggeredDebug() {
     return (
       this._pressedIndex >= 0 &&
-      (Keyboard.debugIndex === this._pressedIndex ||
-        GController.debugIndex + this._startGamePadIndex ===
-          this._pressedIndex) &&
+      ((Keyboard.debugIndex >= 0 &&
+        Keyboard.debugIndex === this._pressedIndex) ||
+        (GController.debugIndex >= 0 &&
+          GController.debugIndex + this._startGamePadIndex ===
+            this._pressedIndex)) &&
       this._pressedTime === 0
     );
   }
@@ -700,8 +706,12 @@ export class Input {
   static isPressedThrough() {
     return (
       this._pressedIndex >= 0 &&
-      (this._pressedInput[Keyboard.throughIndex] ||
-        this._pressedInput[GController.throughIndex + this._startGamePadIndex])
+      ((Keyboard.throughIndex >= 0 &&
+        this._pressedInput[Keyboard.throughIndex]) ||
+        (GController.throughIndex >= 0 &&
+          this._pressedInput[
+            GController.throughIndex + this._startGamePadIndex
+          ]))
     );
   }
 
@@ -712,8 +722,12 @@ export class Input {
   static isPressedTalisman() {
     return (
       this._pressedIndex >= 0 &&
-      (this._pressedInput[Keyboard.talismanIndex] ||
-        this._pressedInput[GController.talismanIndex + this._startGamePadIndex])
+      ((Keyboard.talismanIndex >= 0 &&
+        this._pressedInput[Keyboard.talismanIndex]) ||
+        (GController.talismanIndex >= 0 &&
+          this._pressedInput[
+            GController.talismanIndex + this._startGamePadIndex
+          ]))
     );
   }
 
@@ -724,9 +738,11 @@ export class Input {
   static isTriggeredEncounter() {
     return (
       this._pressedIndex >= 0 &&
-      (Keyboard.encounterIndex === this._pressedIndex ||
-        GController.encounterIndex + this._startGamePadIndex ===
-          this._pressedIndex) &&
+      ((Keyboard.encounterIndex >= 0 &&
+        Keyboard.encounterIndex === this._pressedIndex) ||
+        (GController.encounterIndex >= 0 &&
+          GController.encounterIndex + this._startGamePadIndex ===
+            this._pressedIndex)) &&
       this._pressedTime === 0
     );
     return false;

@@ -14,7 +14,11 @@ interface File {
 }
 
 interface Android {
-  sendMessage(msg: string);
+  requestReload();
+  readSettings();
+  applySettings(data: string);
+  startSettings();
+  endSettings();
 }
 
 interface Window {

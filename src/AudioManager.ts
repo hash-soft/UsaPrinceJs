@@ -38,6 +38,10 @@ export class AudioManager {
    * 効果音
    */
   private static _ses: Map<string, Sound> = new Map();
+  /**
+   * 一時停止中フラグ
+   */
+  private static _isAllPaused = false;
 
   /**
    * bgm再生
@@ -258,10 +262,7 @@ export class AudioManager {
    */
   static pauseBgm() {
     const bgm = this._getCurrentBgm();
-    // 演奏中なら一時停止する
-    if (bgm?.sound.isPlaying) {
-      bgm.sound.pause();
-    }
+    bgm?.sound.pause();
   }
 
   /**
@@ -581,9 +582,9 @@ export class AudioManager {
   private static _pauseSounds(sounds: Map<string, Sound>) {
     for (const [, sound] of sounds) {
       // 再生中
-      if (sound.isPlaying) {
+      //if (sound.isPlaying) {
         sound.pause();
-      }
+      //}
     }
   }
 
@@ -662,7 +663,7 @@ export class AudioManager {
     end?: number,
     endFn?: (sound: Sound) => void,
   ) {
-    if (!sound?.isPlayable) {
+    if (!sound?.isPlayable || this._isAllPaused) {
       return;
     }
     const instance = sound.play({
@@ -682,6 +683,9 @@ export class AudioManager {
    * すべて再開する
    */
   static allResume() {
+    this._isAllPaused = false;
+    sound.resumeAll();
+    // 一時停止中に読み込み完了したサウンドがあるかもしれないので念のため呼び出す
     this.resumeBgm();
     this.resumeSystemSe();
     this.resumeSe();
@@ -691,8 +695,7 @@ export class AudioManager {
    * すべて一時停止する
    */
   static allPause() {
-    this.pauseBgm();
-    this.pauseSystemSe();
-    this.pauseSe();
+    this._isAllPaused = true;
+    sound.pauseAll();
   }
 }

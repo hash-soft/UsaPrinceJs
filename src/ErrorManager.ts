@@ -76,7 +76,7 @@ export class ErrorManager {
    */
   private static _close() {
     if (Utils.runningAndroid()) {
-      window.android.sendMessage('close');
+      window.android.requestReload();
     } else {
       window.close();
     }
