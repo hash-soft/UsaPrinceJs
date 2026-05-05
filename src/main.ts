@@ -85,6 +85,10 @@ mainWindow.init = async function () {
         mainWindow.screenshot.format =
           screenshot.format ?? defaultScreenshot.format;
       }
+      if (settings.volume) {
+        AudioManager.setBgmVolume(settings.volume.bgm / 100);
+        AudioManager.setSeVolume(settings.volume.se / 100);
+      }
       inputSetOK = true;
       logSetOK = true;
     }
@@ -404,7 +408,13 @@ if (Utils.runningAndroid()) {
   window.android.applySettings = function (data: string) {
     try {
       const settings: UsaConfig = JSON.parse(data);
-      Input.reset(settings);
+      if (settings.volume) {
+        AudioManager.setBgmVolume(settings.volume.bgm / 100);
+        AudioManager.setSeVolume(settings.volume.se / 100);
+      }
+      if (settings.gamePad) {
+        Input.reset(settings);
+      }
     } catch (e) {
       GameLog.error(e);
     }

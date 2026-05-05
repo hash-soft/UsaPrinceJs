@@ -42,6 +42,14 @@ export class AudioManager {
    * 一時停止中フラグ
    */
   private static _isAllPaused = false;
+  /**
+   * BGM音量
+   */
+  private static _bgmVolume = 1.0;
+  /**
+   * SE音量
+   */
+  private static _seVolume = 1.0;
 
   /**
    * bgm再生
@@ -583,7 +591,7 @@ export class AudioManager {
     for (const [, sound] of sounds) {
       // 再生中
       //if (sound.isPlaying) {
-        sound.pause();
+      sound.pause();
       //}
     }
   }
@@ -622,6 +630,20 @@ export class AudioManager {
   }
 
   /**
+   * URLからデフォルト音量を取得する
+   * @param url
+   * @returns
+   */
+  private static _getDefaultVolumeForUrl(url: string) {
+    if (url.includes('/music/')) {
+      return this._bgmVolume;
+    } else if (url.includes('/sound/')) {
+      return this._seVolume;
+    }
+    return 1.0; // デフォルト
+  }
+
+  /**
    * 読み込み
    * @param url
    * @param fn
@@ -636,6 +658,7 @@ export class AudioManager {
     const sound = Sound.from({
       url: url,
       preload: true,
+      volume: this._getDefaultVolumeForUrl(url),
       loaded: (err, sound: Sound | undefined) => {
         if (err) {
           errorfn?.();
@@ -697,5 +720,30 @@ export class AudioManager {
   static allPause() {
     this._isAllPaused = true;
     sound.pauseAll();
+  }
+
+  /**
+   * BGM音量を設定する
+   * @param volume
+   */
+  static setBgmVolume(volume: number) {
+    this._bgmVolume = volume;
+    for (const bgm of this._bgmStack) {
+      bgm.sound.volume = volume;
+    }
+  }
+
+  /**
+   * SE音量を設定する
+   * @param volume
+   */
+  static setSeVolume(volume: number) {
+    this._seVolume = volume;
+    for (const [, sound] of this._ses) {
+      sound.volume = volume;
+    }
+    for (const [, sound] of this._systemSes) {
+      sound.volume = volume;
+    }
   }
 }

@@ -72,6 +72,10 @@ export interface UsaConfig {
   screenshot: Screenshot;
   keyboard: string[][];
   gamePad: string[][];
+  volume: {
+    bgm: number;
+    se: number;
+  };
 }
 
 export const usaConfigName = 'config.json';
