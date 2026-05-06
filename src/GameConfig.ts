@@ -76,6 +76,7 @@ export interface UsaConfig {
     bgm: number;
     se: number;
   };
+  displayFps: boolean;
 }
 
 export const usaConfigName = 'config.json';

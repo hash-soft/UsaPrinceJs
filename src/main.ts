@@ -56,13 +56,11 @@ mainWindow.init = async function () {
   // PIXIのビューを最初に作っておく
   await Graphics.initialize(EResolve.Width, EResolve.Height);
   this.viewFit();
-  if (!Utils.runningAndroid() || checkTestPlay()) {
-    this.makeFPSMeter();
-  }
   this.makeDebugHtml();
   const logDefault = checkTestPlay() ? ELogLevel.Debug : ELogLevel.Error;
   // 初期設定はdebugかどうかで決定
   setSaveDataCompress(!checkTestPlay());
+  this.meterVisible = checkTestPlay();
   let inputSetOK = false;
   let logSetOK = false;
   try {
@@ -89,12 +87,16 @@ mainWindow.init = async function () {
         AudioManager.setBgmVolume(settings.volume.bgm / 100);
         AudioManager.setSeVolume(settings.volume.se / 100);
       }
+      if (settings.displayFps != null) {
+        this.meterVisible = settings.displayFps;
+      }
       inputSetOK = true;
       logSetOK = true;
     }
   } catch (e) {
     GameLog.error(e);
   }
+  this.makeFPSMeter();
 
   if (!inputSetOK) {
     Input.initialize();
@@ -149,7 +151,6 @@ mainWindow.makeFPSMeter = function () {
         graph: 1,
       };
   this.meter = new FPSMeter(undefined, meterOptions);
-  this.meterVisible = checkTestPlay();
   if (!this.meterVisible) {
     this.meter.hide();
   }
@@ -246,13 +247,7 @@ mainWindow.keyup = function (event: KeyboardEvent) {
   const code = event.code.toLowerCase();
   switch (code) {
     case 'f2':
-      if (this.meterVisible) {
-        this.meter.hide();
-        this.meterVisible = false;
-      } else {
-        this.meter.show();
-        this.meterVisible = true;
-      }
+      this.showFpsMeter(!this.meterVisible);
       break;
     case 'f3':
       if (this.meterVisible) {
@@ -268,6 +263,16 @@ mainWindow.keyup = function (event: KeyboardEvent) {
     case 'f10':
       this.takeScreenshot();
       break;
+  }
+};
+
+mainWindow.showFpsMeter = function (visible: boolean) {
+  if (visible) {
+    this.meter.show();
+    this.meterVisible = true;
+  } else {
+    this.meter.hide();
+    this.meterVisible = false;
   }
 };
 
@@ -414,6 +419,9 @@ if (Utils.runningAndroid()) {
       }
       if (settings.gamePad) {
         Input.reset(settings);
+      }
+      if (settings.displayFps != null) {
+        mainWindow.showFpsMeter(settings.displayFps);
       }
     } catch (e) {
       GameLog.error(e);
