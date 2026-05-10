@@ -254,7 +254,7 @@ export class GameUtils {
   private static _setListSlots(
     params: Array<number | string>,
     startName: string,
-    countName: string
+    countName: string,
   ) {
     setSystemSlot(countName, params.length);
     const start = getSlotId(startName);
@@ -822,7 +822,7 @@ export class GameUtils {
     max: number,
     luckId: number,
     s: number,
-    t: number
+    t: number,
   ) {
     if (luckId) {
       const center = Math.floor((min + max) / 2);
@@ -1167,6 +1167,8 @@ export class GameUtils {
   static getSaveFileList() {
     if (this._runningElectron()) {
       return this._getSaveListToLocalFile();
+    } else if (this._runningAndroid()) {
+      return this._getSaveListToAndroidFile();
     } else {
       return this._getSaveListToWebStorage();
     }
@@ -1199,7 +1201,7 @@ export class GameUtils {
     window.file.send(
       'getSaveFileList',
       `${saveInfo.path}/${saveInfo.format}`,
-      saveInfo.max
+      saveInfo.max,
     );
     return new Promise<SaveFileInfo[]>((resolve, reject) => {
       window.file.on('getSaveFileListResult', async (result, data) => {
@@ -1227,7 +1229,7 @@ export class GameUtils {
     window.file.send(
       'getSuspendFileList',
       `${saveInfo.suspendPath}/${saveInfo.suspendFormat}`,
-      saveInfo.max
+      saveInfo.max,
     );
     return new Promise<SuspendFileInfo[]>((resolve, reject) => {
       window.file.on('getSuspendFileListResult', async (result, data) => {
@@ -1247,6 +1249,29 @@ export class GameUtils {
   }
 
   /**
+   * セーブファイルリストをAndroidから取得する
+   * @returns
+   */
+  private static _getSaveListToAndroidFile() {
+    const saveInfo = system.saveInfo;
+    const listText =
+      window.android.readSaveFileList(
+        `${saveInfo.path}/${saveInfo.format}`,
+        saveInfo.max,
+      ) || this._makeEmptySaveList();
+    return this._parseHeaderSource(listText).then((headers) => {
+      return new Promise<SaveFileInfo[]>((resolve, reject) => {
+        try {
+          resolve(this._expandSaveFileListFromObject(headers));
+        } catch (e) {
+          GameLog.error(e);
+          reject('failed load save list');
+        }
+      });
+    });
+  }
+
+  /**
    * セーブファイルリストをローカルストレージから取得する
    * @returns
    */
@@ -1259,7 +1284,7 @@ export class GameUtils {
           resolve(this._expandSaveFileListFromObject(headers));
         } catch (e) {
           GameLog.error(e);
-          reject('failed load suspend list');
+          reject('failed load save list');
         }
       });
     });
@@ -1287,7 +1312,7 @@ export class GameUtils {
     const headers: SuspendHeaderSource[] = JSON.parse(data);
     for (const header of headers) {
       header.suspendHeaderText = await this._decompressSaveText(
-        header.suspendHeaderText
+        header.suspendHeaderText,
       );
     }
     return headers;
@@ -1306,7 +1331,7 @@ export class GameUtils {
           resolve(this._expandSuspendFileListFromObject(suspendHeaders));
         } catch (e) {
           GameLog.error(e);
-          reject('failed load save list');
+          reject('failed load suspend list');
         }
       });
     });
@@ -1318,7 +1343,7 @@ export class GameUtils {
    * @returns
    */
   private static _expandSaveFileListFromObject(
-    headers: SaveHeaderSource[]
+    headers: SaveHeaderSource[],
   ): SaveFileInfo[] {
     return headers.map((value: SaveHeaderSource): SaveFileInfo => {
       return this._expandSaveHeaderFromObject(value);
@@ -1332,7 +1357,7 @@ export class GameUtils {
    * @private
    */
   private static _expandSaveHeaderFromObject(
-    value: SaveHeaderSource
+    value: SaveHeaderSource,
   ): SaveFileInfo {
     let parseHeader: SaveHeader | null = null;
     if (value.headerText) {
@@ -1373,7 +1398,7 @@ export class GameUtils {
    * @private
    */
   private static _expandSuspendFileListFromObject(
-    suspendHeaders: SuspendHeaderSource[]
+    suspendHeaders: SuspendHeaderSource[],
   ): SuspendFileInfo[] {
     return suspendHeaders.map((value) => {
       return this._expandSuspendHeaderFromObject(value);
@@ -1387,7 +1412,7 @@ export class GameUtils {
    * @private
    */
   private static _expandSuspendHeaderFromObject(
-    value: SuspendHeaderSource
+    value: SuspendHeaderSource,
   ): SuspendFileInfo {
     let parseSuspendHeader: SuspendHeader | null = null;
     if (value.suspendHeaderText) {
@@ -1424,6 +1449,8 @@ export class GameUtils {
   static saveFile(id: number, header: string, body: string) {
     if (this._runningElectron()) {
       return this._saveToLocalFile(id, header, body, false);
+    } else if (this._runningAndroid()) {
+      return this._saveToAndroidFile(id, header, body, false);
     } else {
       return this._saveToWebStorage(id, header, body, false);
     }
@@ -1455,7 +1482,7 @@ export class GameUtils {
     id: number,
     header: string,
     body: string,
-    suspend: boolean
+    suspend: boolean,
   ) {
     const name = this._makeSaveFilePath(id, suspend);
     return this._compressSaveText(header)
@@ -1480,6 +1507,40 @@ export class GameUtils {
   }
 
   /**
+   * Androidにセーブファイルを保存する
+   * @param id
+   * @param header
+   * @param body
+   * @returns
+   */
+  private static _saveToAndroidFile(
+    id: number,
+    header: string,
+    body: string,
+    suspend: boolean,
+  ) {
+    const name = this._makeSaveFilePath(id, suspend);
+    return this._compressSaveText(header)
+      .then((compressedHeader) => {
+        header = compressedHeader;
+        return this._compressSaveText(body);
+      })
+      .then((compressedBody) => {
+        body = compressedBody;
+
+        return new Promise<void>((resolve, reject) => {
+          const result = window.android.writeSaveFile(name, header, body);
+          if (result) {
+            resolve();
+          } else {
+            GameLog.error(`failed write file: ${name}`);
+            reject();
+          }
+        });
+      });
+  }
+
+  /**
    * ローカルストレージにセーブファイルを保存する
    * @param id
    * @param header
@@ -1490,7 +1551,7 @@ export class GameUtils {
     id: number,
     header: string,
     body: string,
-    suspend: boolean
+    suspend: boolean,
   ) {
     const name = suspend
       ? this._makeSuspendFilename(id)
@@ -1524,7 +1585,7 @@ export class GameUtils {
   private static _saveListToWebStorage(
     id: number,
     header: string,
-    suspend: boolean
+    suspend: boolean,
   ) {
     const key = this._getSaveListKey();
     const listText = localStorage.getItem(key) ?? this._makeEmptySaveList();
@@ -1585,6 +1646,10 @@ export class GameUtils {
       return window.file
         .readSaveHeader(this._makeSaveFilePath(id, false))
         .then((header) => this._decompressSaveText(header));
+    } else if (this._runningAndroid()) {
+      const path = this._makeSaveFilePath(id, false);
+      const header = window.android.readSaveHeader(path);
+      return this._decompressSaveText(header);
     } else {
       return this._getSaveHeaderToWebStorage(id, false);
     }
@@ -1601,7 +1666,7 @@ export class GameUtils {
     const listText = localStorage.getItem(key);
     if (!listText) {
       return new Promise<string>((_resolve, reject) =>
-        reject('failed load header list')
+        reject('failed load header list'),
       );
     }
     if (suspend) {
@@ -1612,7 +1677,7 @@ export class GameUtils {
       const header = headers[id - 1];
       if (!header) {
         return new Promise<string>((_resolve, reject) =>
-          reject('failed load header list')
+          reject('failed load header list'),
         );
       }
       return this._decompressSaveText(header.headerText).then(
@@ -1629,7 +1694,7 @@ export class GameUtils {
               GameLog.error(e);
               reject('failed load header list');
             }
-          })
+          }),
       );
     }
   }
@@ -1642,6 +1707,8 @@ export class GameUtils {
   static loadSaveFile(id: number) {
     if (this._runningElectron()) {
       return this._loadFromLocalFile(id, false);
+    } else if (this._runningAndroid()) {
+      return this._loadFromAndroidFile(id, false);
     } else {
       return this._loadFromWebStorage(id, false);
     }
@@ -1649,6 +1716,8 @@ export class GameUtils {
 
   /**
    * 中断ファイルを読み込む
+   * webフラグfalseの場合、Electronかつテストプレイの時だけローカルファイルにあれば読み込む
+   * ローカルファイル > webストレージの順で読み込みを行っている
    * @param id
    * @param web
    * @returns
@@ -1687,6 +1756,20 @@ export class GameUtils {
         }
       });
     });
+  }
+
+  /**
+   * Androidのファイルからセーブファイルを読み込む
+   * @param id
+   * @returns
+   */
+  private static _loadFromAndroidFile(id: number, suspend: boolean) {
+    const name = this._makeSaveFilePath(id, suspend);
+    const textData = window.android.readSaveFile(name);
+    if (!textData) {
+      return Promise.reject();
+    }
+    return this._decompressSaveText(textData);
   }
 
   /**
@@ -1744,6 +1827,8 @@ export class GameUtils {
   static copyFile(srcId: number, destId: number) {
     if (this._runningElectron()) {
       return this._copyFromLocalFile(srcId, destId);
+    } else if (this._runningAndroid()) {
+      return this._copyFromAndroidFile(srcId, destId);
     } else {
       return this._copyFromWebStorage(srcId, destId);
     }
@@ -1767,6 +1852,25 @@ export class GameUtils {
           reject();
         }
       });
+    });
+  }
+
+  /**
+   * Androidのセーブファイルを写す
+   * @param srcId
+   * @param destId
+   * @returns
+   */
+  private static _copyFromAndroidFile(srcId: number, destId: number) {
+    const srcName = this._makeSaveFilePath(srcId, false);
+    const destName = this._makeSaveFilePath(destId, false);
+    return new Promise<void>((resolve, reject) => {
+      const result = window.android.copyFile(srcName, destName);
+      if (result) {
+        resolve();
+      } else {
+        reject();
+      }
     });
   }
 
@@ -1805,6 +1909,8 @@ export class GameUtils {
   static removeSaveFile(id: number) {
     if (this._runningElectron()) {
       return this._removeFromLocalFile(id, false);
+    } else if (this._runningAndroid()) {
+      return this._removeFromAndroidFile(id, false);
     } else {
       return this._removeFromWebStorage(id, false);
     }
@@ -1813,6 +1919,7 @@ export class GameUtils {
   /**
    * 中断ファイルを削除する
    * @param id
+   * @param web
    */
   static removeSuspendFile(id: number, web: boolean) {
     if (web) {
@@ -1854,6 +1961,24 @@ export class GameUtils {
           reject();
         }
       });
+    });
+  }
+
+  /**
+   * Androidのセーブファイル削除
+   * @param id
+   * @param suspend
+   * @returns
+   */
+  private static _removeFromAndroidFile(id: number, suspend: boolean) {
+    const name = this._makeSaveFilePath(id, suspend);
+    return new Promise<void>((resolve, reject) => {
+      const result = window.android.removeFile(name);
+      if (result) {
+        resolve();
+      } else {
+        reject();
+      }
     });
   }
 
@@ -1940,6 +2065,14 @@ export class GameUtils {
    */
   private static _runningElectron() {
     return Utils.runningElectron();
+  }
+
+  /**
+   * android上で実行ているか
+   * @returns
+   */
+  private static _runningAndroid() {
+    return Utils.runningAndroid();
   }
 
   /**
@@ -2129,7 +2262,7 @@ export class GameRate {
     max: number,
     luckId: number,
     sl: number,
-    tl: number
+    tl: number,
   ) {
     return this.luckBiosJudgeFromRealNumber(num / max, luckId, sl, tl);
   }
@@ -2146,7 +2279,7 @@ export class GameRate {
     rNum: number,
     luckId: number,
     sl: number,
-    tl: number
+    tl: number,
   ) {
     if (!luckId) {
       return Utils.random() < rNum;
@@ -2260,7 +2393,7 @@ export class GameCalc {
   private static _getCalcValues(
     index: number,
     actor: GameBattler,
-    target: GameBattler
+    target: GameBattler,
   ) {
     const methodName = '_calc' + index;
     const result: number =
@@ -2358,7 +2491,7 @@ export class GameParamEffect {
     const applyValue = this._applyEffect(
       pe.applyType,
       value,
-      degree + pe.applyValue
+      degree + pe.applyValue,
     );
     return GameRate.calc(pe.rateId) * applyValue;
   }
@@ -2373,7 +2506,7 @@ export class GameParamEffect {
   private static _calcEffectDegree(
     type: EParamEffectCalcType,
     s: number,
-    t: number
+    t: number,
   ) {
     switch (type) {
       case EParamEffectCalcType.Ave:
@@ -2395,7 +2528,7 @@ export class GameParamEffect {
   private static _applyEffect(
     type: EParamEffectApplyType,
     value: number,
-    degree: number
+    degree: number,
   ) {
     switch (type) {
       case EParamEffectApplyType.Mul:

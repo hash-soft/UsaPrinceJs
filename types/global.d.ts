@@ -19,6 +19,12 @@ interface Android {
   applySettings(data: string);
   startSettings();
   endSettings();
+  readSaveFileList(fileFormat: string, max: number): string;
+  readSaveHeader(filename: string): string;
+  readSaveFile(filename: string): string;
+  writeSaveFile(filename: string, header: string, body: string): boolean;
+  copyFile(src: string, dest: string): boolean;
+  removeFile(filename: string): boolean;
 }
 
 interface Window {
