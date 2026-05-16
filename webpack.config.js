@@ -9,6 +9,7 @@ console.log('build start', new Date().toLocaleString('ja-JP'));
 
 const gameConfig = (env, argv) => {
   const dev = argv.mode === 'development';
+  const outputPath = dev ? 'js_dev' : 'js';
   return {
     stats: 'minimal', // Keep console output easy to read.
     entry: {
@@ -17,7 +18,7 @@ const gameConfig = (env, argv) => {
 
     // Your build destination
     output: {
-      path: path.resolve(__dirname, 'js'),
+      path: path.resolve(__dirname, outputPath),
       filename: '[name].js',
     },
 
@@ -74,40 +75,44 @@ const gameConfig = (env, argv) => {
       extensions: ['.tsx', '.ts', '.js'],
     },
 
-    plugins: dev ? [
-      // Copy our static assets to the final build
-      new CopyPlugin({
-        patterns: [{ from: 'static/' }],
-      }),
+    plugins: dev
+      ? [
+          // Copy our static assets to the final build
+          new CopyPlugin({
+            patterns: [{ from: 'static/' }],
+          }),
 
-      // Make an index.html from the template
-      new HtmlWebpackPlugin({
+          // Make an index.html from the template
+          new HtmlWebpackPlugin({
             filename: '../index.html',
             template: 'src/index.ejs',
+            publicPath: 'js/',
             hash: true,
             minify: false,
             inject: 'body',
           }),
-       new HtmlWebpackPlugin({
+          new HtmlWebpackPlugin({
             filename: '../index_test.html',
             template: 'src/index_test.ejs',
+            publicPath: 'js/',
             hash: true,
             minify: false,
             inject: 'body',
-          })
-    ] : [
-      // Copy our static assets to the final build
-      new CopyPlugin({
-        patterns: [{ from: 'static/' }],
-      }),
-      new HtmlWebpackPlugin({
+          }),
+        ]
+      : [
+          // Copy our static assets to the final build
+          new CopyPlugin({
+            patterns: [{ from: 'static/' }],
+          }),
+          new HtmlWebpackPlugin({
             filename: '../index.html',
             template: 'src/index.ejs',
             hash: true,
             minify: true,
             inject: 'body',
           }),
-    ],
+        ],
   };
 };
 

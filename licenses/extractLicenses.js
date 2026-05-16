@@ -9,6 +9,12 @@ if (!licensesFile) {
   return -1;
 }
 
+const isAndroid = process.argv[3] === 'android';
+if (!isAndroid) {
+  console.log('ライセンス表記');
+  console.log('');
+}
+
 let data;
 try {
   data = JSON.parse(fs.readFileSync(licensesFile, 'utf8'));
@@ -46,16 +52,17 @@ for (const packageName in data) {
   results.push(result);
 }
 
-console.log('ライセンス表記');
-console.log('');
+const line = isAndroid
+  ? '#-----------------------------------#'
+  : '-----------------------------------';
 for (const { packageName, licenses, repository, licenseContent } of results) {
-  console.log('-----------------------------------');
+  console.log(line);
   console.log(`Package: ${packageName}`);
   console.log(`Licenses: ${licenses}`);
   console.log(`Repository: ${repository}`);
   console.log('License Content:');
   console.log(licenseContent);
-  console.log('-----------------------------------');
+  console.log(line);
   console.log('');
 }
 

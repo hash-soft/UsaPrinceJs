@@ -7,6 +7,7 @@ assets/**/*
 !assets/**/*.tiled-session
 main/
 js/
+js_dev/
 js_config/
 screenshots
 build_develop*
