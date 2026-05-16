@@ -1252,42 +1252,38 @@ export class GameUtils {
    * セーブファイルリストをAndroidから取得する
    * @returns
    */
-  private static _getSaveListToAndroidFile() {
+  private static async _getSaveListToAndroidFile() {
     const saveInfo = system.saveInfo;
     const listText =
       window.android.readSaveFileList(
         `${saveInfo.path}/${saveInfo.format}`,
         saveInfo.max,
       ) || this._makeEmptySaveList();
-    return this._parseHeaderSource(listText).then((headers) => {
-      return new Promise<SaveFileInfo[]>((resolve, reject) => {
-        try {
-          resolve(this._expandSaveFileListFromObject(headers));
-        } catch (e) {
-          GameLog.error(e);
-          reject('failed load save list');
-        }
-      });
-    });
+    try {
+      const headers = await this._parseHeaderSource(listText);
+      return this._expandSaveFileListFromObject(headers);
+    } catch (e) {
+      GameLog.error(e);
+      const headers = await this._parseHeaderSource(this._makeEmptySaveList());
+      return this._expandSaveFileListFromObject(headers);
+    }
   }
 
   /**
    * セーブファイルリストをローカルストレージから取得する
    * @returns
    */
-  private static _getSaveListToWebStorage() {
+  private static async _getSaveListToWebStorage() {
     const key = this._getSaveListKey();
     const listText = localStorage.getItem(key) ?? this._makeEmptySaveList();
-    return this._parseHeaderSource(listText).then((headers) => {
-      return new Promise<SaveFileInfo[]>((resolve, reject) => {
-        try {
-          resolve(this._expandSaveFileListFromObject(headers));
-        } catch (e) {
-          GameLog.error(e);
-          reject('failed load save list');
-        }
-      });
-    });
+    try {
+      const headers = await this._parseHeaderSource(listText);
+      return this._expandSaveFileListFromObject(headers);
+    } catch (e) {
+      GameLog.error(e);
+      const headers = await this._parseHeaderSource(this._makeEmptySaveList());
+      return this._expandSaveFileListFromObject(headers);
+    }
   }
 
   /**
@@ -1322,19 +1318,19 @@ export class GameUtils {
    * 中断ファイルリストをローカルストレージから取得する
    * @returns
    */
-  private static _getSuspendListToWebStorage() {
+  private static async _getSuspendListToWebStorage() {
     const key = this._getSuspendListKey();
     const listText = localStorage.getItem(key) ?? this._makeEmptySuspendList();
-    return this._parseSuspendHeaderSource(listText).then((suspendHeaders) => {
-      return new Promise<SuspendFileInfo[]>((resolve, reject) => {
-        try {
-          resolve(this._expandSuspendFileListFromObject(suspendHeaders));
-        } catch (e) {
-          GameLog.error(e);
-          reject('failed load suspend list');
-        }
-      });
-    });
+    try {
+      const suspendHeaders = await this._parseSuspendHeaderSource(listText);
+      return this._expandSuspendFileListFromObject(suspendHeaders);
+    } catch (e) {
+      GameLog.error(e);
+      const suspendHeaders = await this._parseSuspendHeaderSource(
+        this._makeEmptySuspendList(),
+      );
+      return this._expandSuspendFileListFromObject(suspendHeaders);
+    }
   }
 
   /**
@@ -1806,15 +1802,21 @@ export class GameUtils {
   /**
    * セーブデータのテキストを展開する
    * 保存されたテキストが Utils.compress() で圧縮されている場合は展開する
+   * 不正なら空を返す
    * @param text 展開するテキスト
    * @returns 展開されたテキスト
    */
   private static async _decompressSaveText(text: string) {
-    // 先頭2文字のコードが 0x78 0x9c なら圧縮とみなし展開する
-    if (text && text.charCodeAt(0) === 0x78 && text.charCodeAt(1) === 0x9c) {
-      return await Utils.decompress(text);
-    } else {
-      return text;
+    try {
+      // 先頭2文字のコードが 0x78 0x9c なら圧縮とみなし展開する
+      if (text && text.charCodeAt(0) === 0x78 && text.charCodeAt(1) === 0x9c) {
+        return await Utils.decompress(text);
+      } else {
+        return text;
+      }
+    } catch (e) {
+      GameLog.error('decompress error', e);
+      return '';
     }
   }
 
