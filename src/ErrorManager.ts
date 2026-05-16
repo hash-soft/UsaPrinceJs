@@ -62,7 +62,7 @@ export class ErrorManager {
     messageElm.innerHTML = message;
     const closeElm = document.createElement('button');
     closeElm.className = 'error-button';
-    closeElm.innerHTML = '閉じる';
+    closeElm.innerHTML = Utils.runningAndroid() ? 'リロード' : '閉じる';
     closeElm.addEventListener('click', () => {
       this._close();
     });
