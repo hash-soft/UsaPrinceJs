@@ -24,6 +24,7 @@ export default class Utils {
    * 開始時のプレイカウント
    */
   private static _startPlayCount = 0;
+  private static _noPlaySound = false;
   /**
    * プログラムエラー例外に入れるテキスト
    * プログラムが正しければ起こりえない場所の例外に入れる
@@ -272,6 +273,14 @@ export default class Utils {
    */
   static getFrameCount() {
     return this._frameCount;
+  }
+
+  static setNoPlaySound(noPlaySound: boolean) {
+    this._noPlaySound = noPlaySound;
+  }
+
+  static isNoPlaySound() {
+    return this._noPlaySound;
   }
 
   /**

@@ -16,6 +16,7 @@ import { GameUnit } from './GameUnit';
 import { GameUtils } from './GameUtils';
 import { GameItem } from './GameItem';
 import { getSystemSlotNumber, setSystemSlot } from './DataUtils';
+import Utils from './Utils';
 
 /**
  * コマンド
@@ -185,7 +186,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
    */
   protected _createCustomCommand(
     newPos: number,
-    params?: Array<number | string>
+    params?: Array<number | string>,
   ) {
     switch (newPos) {
       case EExecutorMapMenu.PrepareAction:
@@ -408,7 +409,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
 
     // イベント
     const triggerItem = this._findTriggerSpell(
-      this._currentAction.getSelectSpecialId()
+      this._currentAction.getSelectSpecialId(),
     );
     if (this._checkTrigger(triggerItem)) {
       this._create(EExecutorMapMenu.SpellAfterEvent);
@@ -424,7 +425,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
    */
   private _findTriggerSpell(itemId: number) {
     return system.triggerSkills.find(
-      (triggerItem) => triggerItem.id === itemId
+      (triggerItem) => triggerItem.id === itemId,
     );
   }
 
@@ -541,7 +542,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     }
     // イベント
     const triggerItem = this._findTriggerItem(
-      this._currentAction.getSelectSpecialId()
+      this._currentAction.getSelectSpecialId(),
     );
     if (this._checkTrigger(triggerItem)) {
       this._create(EExecutorMapMenu.ItemAfterEvent);
@@ -561,7 +562,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     if (this._needTargetSelect()) {
       GameUtils.setExtraSlots([this._currentAction.actionId]);
       this._create(
-        item ? EExecutorMapMenu.ItemUseTarget : EExecutorMapMenu.SpellUseTarget
+        item ? EExecutorMapMenu.ItemUseTarget : EExecutorMapMenu.SpellUseTarget,
       );
       return true;
     }
@@ -816,7 +817,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     // 選択道具を取得
     const item = this._getSelectedItemFromMember(
       EExecutorMapMenu.ItemChoice,
-      member
+      member,
     );
     GameUtils.setSlotItemName(item.name);
     // 装備品か確認
@@ -848,7 +849,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     // 選択道具を取得
     const item = this._getSelectedItem(
       EExecutorMapMenu.ItemChoice,
-      EExecutorMapMenu.Item
+      EExecutorMapMenu.Item,
     );
     // 捨てる道具名はtargetに格納
     GameUtils.setSlotTItemName(item.name);
@@ -891,7 +892,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     const actor = this._getItemSelectedMember(EExecutorMapMenu.Item);
     const item = this._getSelectedItemFromMember(
       EExecutorMapMenu.ItemChoice,
-      actor
+      actor,
     );
     const target = this._getItemSelectedMember(EExecutorMapMenu.ItemTransfer);
     const tItem = result.object as GameItem;
@@ -928,7 +929,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     const member = this._getItemSelectedMember(EExecutorMapMenu.Item);
     const item = this._getSelectedItemFromMember(
       EExecutorMapMenu.ItemChoice,
-      member
+      member,
     );
     fn(member, item);
   }
@@ -1270,7 +1271,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     // 装飾品
     const [equipItem, enable] = this._getChangeEquipItem(
       member.accessory,
-      item
+      item,
     );
     member.equipItem(equipItem, enable);
     // メンバー選択に戻る
@@ -1303,7 +1304,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
    */
   private _getChangeEquipItem(
     offItem?: GameItem,
-    onItem?: GameItem
+    onItem?: GameItem,
   ): [GameItem | undefined, boolean] {
     return onItem ? [onItem, true] : [offItem, false];
   }
@@ -1370,6 +1371,9 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
     const id = gameTemp.testPlay ? 'suspendData' : 'suspend';
     this._pushCommonScriptCommand(system.commonScriptIds[id]);
     this._create(EExecutorMapMenu.SuspendResult);
+    if (!gameTemp.testPlay) {
+      Utils.setNoPlaySound(true);
+    }
     return true;
   }
 
@@ -1409,7 +1413,7 @@ export class ExecutorMapMenu extends ExecutorEmbeddedBase {
   protected override _selectCancel(
     index: number,
     pos?: number,
-    cancelIndex?: number
+    cancelIndex?: number,
   ) {
     if (index === -2) {
       this._allCancel();

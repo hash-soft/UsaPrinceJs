@@ -223,7 +223,9 @@ mainWindow.focus = function () {
   if (this.meterVisible) {
     this.meter.resume();
   }
-  AudioManager.allResume();
+  if (!Utils.isNoPlaySound()) {
+    AudioManager.allResume();
+  }
   Graphics.startTicker();
   this.active = true;
 };
